@@ -1,0 +1,101 @@
+.homediv_main {
+  display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(3, 20% 74% 6%); */
+}
+
+/* ------------- personal div ---------------- */
+.left_personal_details {
+  width: 20%;
+  height: auto;
+  background: #eeecec;
+}
+
+.home_div_main_feed {
+  background: #eeecec;
+  width: 74%;
+}
+.leftside_home_div {
+  padding: 80px 0 100px 40px;
+  background: var(--white);
+}
+.leftside_home_div .hi {
+  font-size: 18px;
+  font-family: var(--poppins);
+}
+.leftside_home_div h1 {
+  margin: 5px 0 0px 0;
+}
+
+.leftside_home_div h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.leftside_home_div .looking {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  margin: 25px 0 50px 0;
+}
+/* button */
+.btn_hireme {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: var(--yellow);
+  width: 140px;
+}
+.btn_hire {
+  padding: 14px 24px;
+  color: var(--black);
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.btn_hire:before {
+  content: " ";
+  display: block;
+  width: 200px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: -10px;
+  left: -300px;
+  transform: rotate(-45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.btn_hire:hover:before {
+  margin-left: 500%;
+}
+
+/* end button */
+
+/* Type Animation */
+.type-animation {
+  width: 0ch;
+  overflow: hidden;
+  margin-left: 3px;
+  color: var(--black);
+  white-space: nowrap;
+  animation: text 4.5s steps(9) infinite;
+  border-right: 2px solid #fff;
+}
+
+@keyframes text {
+  0% {
+    width: 0ch;
+  }
+
+  50% {
+    width: 9ch;
+  }
+}
+.leftside_home_div h4 {
+  display: flex;
+}
