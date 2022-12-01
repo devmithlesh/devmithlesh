@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/About/About";
+import Archivement from "../components/Archivement/Archivement";
 import Project from "../components/Project/Project";
 import Navbar from "../Menu/Navbar";
 import Pdetail from "../Menu/Pdetail";
@@ -43,8 +44,9 @@ function Home() {
           <About />
           {/*----------------- Project Section ------------------ */}
           <Project />
+          {/* ------------------ Archivements --------------------- */}
+          <Archivement />
         </div>
-        {/* ------------------ Archivements --------------------- */}
 
         {/*------------------------ Navbar ------------------------*/}
         <Navbar />

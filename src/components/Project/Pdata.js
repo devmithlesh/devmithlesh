@@ -1,7 +1,5 @@
-import img1 from "../../Images/projects/1.jpg";
 import img5 from "../../Images/projects/5.jpg";
 import img3 from "../../Images/projects/3.jpg";
-import img4 from "../../Images/projects/4.jpg";
 import img51 from "../../Images/projects/5.1.jpg";
 import img6 from "../../Images/projects/6.png";
 import img7 from "../../Images/projects/7.png";
