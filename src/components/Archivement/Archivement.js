@@ -7,7 +7,7 @@ function Archivement() {
     <>
       <section>
         <div className="wrapper">
-          <div className="archive_main_div" id="">
+          <div className="archive_main_div" id="archivement">
             <h2>
               My <span> Archivements</span>
             </h2>

@@ -33,7 +33,7 @@ function Home() {
                 <br /> in the growth of organization.
               </p>
               <div className="btn_hireme">
-                <a href="#" className="btn_hire">
+                <a href="tel:+918196969106" className="btn_hire">
                   Hire Me <i className="fa-solid fa-user-tie"></i>
                 </a>
               </div>

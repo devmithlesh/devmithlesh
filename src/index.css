@@ -41,6 +41,7 @@ h1 {
   font-weight: 700;
   font-family: var(--poppins);
   font-style: normal;
+  cursor: default;
 }
 
 h2 {
@@ -48,6 +49,7 @@ h2 {
   font-weight: 600;
   font-family: var(--atterta);
   font-style: normal;
+  cursor: default;
 }
 
 h3 {

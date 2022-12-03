@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../../Images/projects/1.jpg";
 import "./Project.css";
 function Pcard(props) {
   return (
@@ -14,7 +13,7 @@ function Pcard(props) {
               <a href={props.button} target="_blank" rel="noopener noreferrer">
                 View Code
               </a>
-              <a href={props.button} target="_blank" rel="noopener noreferrer">
+              <a href={props.weblink} target="_blank" rel="noopener noreferrer">
                 Live Demo
               </a>
             </div>

@@ -20,16 +20,32 @@ function Pdetail() {
         <p>Front End Developer</p>
         {/* social Icons */}
         <div className="social-icons">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/dev_mithlesh/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FiFacebook className="i_tag_social facebook" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/devmithlesh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <AiOutlineLinkedin className="i_tag_social linkedin" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/devmithlesh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsGithub className="i_tag_social github" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/dev_mithlesh/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsInstagram className="i_tag_social insta" />
           </a>
         </div>
