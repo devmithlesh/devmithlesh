@@ -9,7 +9,7 @@ function Archivement() {
         <div className="wrapper">
           <div className="archive_main_div" id="archivement">
             <h2>
-              My <span> Archivements</span>
+              My <span className="text_h2_yellow"> Archivements</span>
             </h2>
             <div className="archive_card_three">
               {Archdata.map((val, ind) => {

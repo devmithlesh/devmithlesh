@@ -8,10 +8,6 @@
   margin-bottom: 50px;
 }
 
-.archive_main_div h2 span {
-  color: var(--yellow);
-}
-
 .archive_card_three {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

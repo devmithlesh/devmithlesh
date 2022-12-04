@@ -4,6 +4,8 @@ import Archivement from "../components/Archivement/Archivement";
 import Project from "../components/Project/Project";
 import Navbar from "../Menu/Navbar";
 import Pdetail from "../Menu/Pdetail";
+import Contactus from "../components/Contact/Contact";
+import Education from "../components/Education/Education";
 import "./Home.css";
 function Home() {
   return (
@@ -46,8 +48,11 @@ function Home() {
           <Project />
           {/* ------------------ Archivements --------------------- */}
           <Archivement />
+          {/*---------------------- Education ----------------------*/}
+          <Education />
+          {/*--------------------- Contact Form --------------------*/}
+          <Contactus />
         </div>
-
         {/*------------------------ Navbar ------------------------*/}
         <Navbar />
       </div>

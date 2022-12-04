@@ -36,6 +36,10 @@ html {
   padding-left: 2px;
 }
 
+.text_h2_yellow {
+  color: var(--yellow);
+}
+
 h1 {
   font-size: 40px;
   font-weight: 700;
