@@ -10,6 +10,7 @@ function About() {
             <h2>
               About <span className="text-yellow">Us</span>
             </h2>
+
             <div className="about_main_div">
               <div className="left_about">
                 <div className="img_left_div">
