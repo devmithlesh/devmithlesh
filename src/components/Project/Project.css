@@ -14,7 +14,7 @@
 }
 
 .project_main_div {
-  padding: 40px;
+  padding: 40px 40px 50px 40px;
   background: var(--white);
   margin-top: 120px;
 }

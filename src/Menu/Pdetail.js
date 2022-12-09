@@ -168,8 +168,14 @@ function Pdetail() {
         </div>
         <div className="button_resume">
           <button>
-            Download Resume
-            <HiOutlineDownload className="hioutlinedown" />
+            <a
+              href="https://devmithlesh-resume.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+              <HiOutlineDownload className="hioutlinedown" />
+            </a>
           </button>
         </div>
       </div>

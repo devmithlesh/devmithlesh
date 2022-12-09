@@ -1,7 +1,7 @@
 .education_main_div {
   background: var(--white);
   margin-top: 120px;
-  padding: 40px;
+  padding: 40px 40px 50px 40px;
 }
 
 .education_main_div h2 {
@@ -31,6 +31,7 @@
 .social_icon_div_education .icon_lang_edu_i {
   font-size: 60px;
   transition: 0.6s;
+  color: #0202dbbc;
 }
 .social_icon_div_education .icon_lang_edu_i:nth-child(1) {
   color: #ff5733;
@@ -68,13 +69,16 @@
   color: var(--yellow);
 }
 
+.social_icon_div_education .icon_lang_edu_i:nth-child(5) {
+  font-size: 55px;
+}
 .social_icon_div_education .icon_lang_edu_i:nth-child(5):hover {
   transform: translateY(10px);
   color: var(--yellow);
 }
 
 .social_icon_div_education .icon_lang_edu_i:nth-child(6) {
-  color: #00bcd4;
+  color: #dfe608;
 }
 .social_icon_div_education .icon_lang_edu_i:nth-child(6):hover {
   transform: translateY(10px);

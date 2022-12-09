@@ -9,6 +9,9 @@ function About() {
           <div className="about_div_in">
             <h2>
               About <span className="text-yellow">Us</span>
+              <div className="animated_div_heading">
+                <span></span>
+              </div>
             </h2>
 
             <div className="about_main_div">

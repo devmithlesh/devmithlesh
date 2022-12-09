@@ -4,8 +4,8 @@ import { SiCss3 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { ImBook } from "react-icons/im";
-import { BsGithub } from "react-icons/bs";
-import { GrLinkedinOption } from "react-icons/gr";
+import { BsBootstrap } from "react-icons/bs";
+import { TbBrandJavascript } from "react-icons/tb";
 import { SlCalender } from "react-icons/sl";
 import "./Education.css";
 
@@ -17,6 +17,9 @@ function Education() {
           <div className="education_main_div" id="education">
             <h2>
               My <span className="text_h2_yellow">Education</span>
+              <div className="animated_div_heading">
+                <span></span>
+              </div>
             </h2>
 
             <div className="social_icon_div_education">
@@ -24,8 +27,8 @@ function Education() {
               <SiCss3 className="icon_lang_edu_i" />
               <FaReact className="icon_lang_edu_i" />
               <SiTailwindcss className="icon_lang_edu_i" />
-              <BsGithub className="icon_lang_edu_i" />
-              <GrLinkedinOption className="icon_lang_edu_i" />
+              <BsBootstrap className="icon_lang_edu_i" />
+              <TbBrandJavascript className="icon_lang_edu_i" />
             </div>
 
             <div className="education__div_inside_data">

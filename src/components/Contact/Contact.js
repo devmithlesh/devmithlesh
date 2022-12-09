@@ -39,6 +39,9 @@ const Contact = () => {
           <div className="contact_main_div" id="contact">
             <h2>
               Contact <span className="text_h2_yellow"> Us</span>
+              <div className="animated_div_heading">
+                <span></span>
+              </div>
             </h2>
             <div className="main_grid_div_contact">
               <div className="contact_details">

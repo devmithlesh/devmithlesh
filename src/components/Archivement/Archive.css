@@ -1,7 +1,7 @@
 .archive_main_div {
   background: var(--white);
   margin-top: 120px;
-  padding: 40px;
+  padding: 40px 40px 50px 40px;
 }
 .archive_main_div h2 {
   text-align: center;

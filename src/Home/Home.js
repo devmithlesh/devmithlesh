@@ -7,6 +7,7 @@ import Pdetail from "../Menu/Pdetail";
 import Contactus from "../components/Contact/Contact";
 import Education from "../components/Education/Education";
 import "./Home.css";
+import Footer from "../components/Footer/Footer";
 function Home() {
   return (
     <>
@@ -52,6 +53,8 @@ function Home() {
           <Education />
           {/*--------------------- Contact Form --------------------*/}
           <Contactus />
+          {/*-------------------- Footer Section --------------------*/}
+          <Footer />
         </div>
         {/*------------------------ Navbar ------------------------*/}
         <Navbar />

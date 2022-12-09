@@ -10,6 +10,9 @@ function Project() {
           <div className="project_main_div" id="project">
             <h2>
               My <span> Projects</span>
+              <div className="animated_div_heading">
+                <span></span>
+              </div>
             </h2>
             <div className="project_card_main_flex">
               {Pdata.map((val, ind) => {
