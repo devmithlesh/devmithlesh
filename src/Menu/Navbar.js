@@ -5,7 +5,7 @@ function Navbar() {
     <>
       <div className="navbar_main_div">
         <div className="nav_bar_main">
-          <button className="dark-mode" style={{ color: "#000" }}>
+          <button className="dark-mode">
             <i className="fa-solid fa-circle-half-stroke"></i>
           </button>
           <div className="menu_options">

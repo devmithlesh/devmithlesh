@@ -118,6 +118,10 @@
   font-weight: 500;
 }
 
+.age p:nth-child(2) {
+  letter-spacing: 1px;
+}
+
 /*---------- Language & Skill ----------*/
 .language_detail h3,
 .sills_details h3,

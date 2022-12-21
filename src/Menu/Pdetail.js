@@ -55,7 +55,7 @@ function Pdetail() {
         <div className="landmark">
           <div className="age">
             <p>Age</p>
-            <p>22</p>
+            <p>21</p>
           </div>
           <div className="residence">
             <p>Residence</p>

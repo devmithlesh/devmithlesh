@@ -31,9 +31,9 @@ function Home() {
               <p className="looking">
                 Looking for an opportunity to work in a challenging position to
                 prove
-                <br /> my computer science skills and utilize my knowledge and
-                intelligence
-                <br /> in the growth of organization.
+                <br class="looking_br" /> my computer science skills and utilize
+                my knowledge and intelligence
+                <br class="looking_br" /> in the growth of organization.
               </p>
               <div className="btn_hireme">
                 <a href="tel:+918196969106" className="btn_hire">

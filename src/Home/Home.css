@@ -99,3 +99,179 @@
 .leftside_home_div h4 {
   display: flex;
 }
+
+@media (max-width: 1024px) {
+  /* Personal details leftside */
+  .button_resume button a {
+    font-size: 12px;
+    padding: 13px 10px;
+  }
+  .personal_details {
+    height: 1253px;
+  }
+
+  /* Home */
+  .leftside_home_div .looking {
+    font-size: 14px;
+  }
+  /* aboutus */
+  .box_about {
+    width: 145px;
+    height: 145px;
+  }
+  .box_about span {
+    font-size: 22px;
+  }
+  .box_about span {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* project */
+  .content_div_project p {
+    font-size: 12px;
+  }
+  .content_div_project h4 {
+    font-size: 14px;
+  }
+
+  /* archivements */
+  .card_arvhivements_div h4 {
+    font-size: 12px;
+  }
+  /* education */
+  .timeline_div_edu {
+    width: 40px;
+  }
+  .right_side_col_scl p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 980px) {
+  /* Personal details */
+  .button_resume button a {
+    font-size: 10px;
+  }
+  .name_user {
+    font-size: 19px;
+  }
+  /* about us */
+  .box_about {
+    width: 130px;
+    height: 130px;
+  }
+  .box_about span {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  /* Project btn */
+  .code_view_div a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 780px) {
+  .navbar_main_div {
+    display: none;
+  }
+  .left_personal_details {
+    display: none;
+  }
+  .home_div_main_feed {
+    width: 100%;
+  }
+  .box_about {
+    width: 140px;
+    height: 140px;
+  }
+  .box_about span {
+    font-size: 20px;
+  }
+  .box_about span {
+    width: 45px;
+    height: 45px;
+  }
+  .project_card_main_flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Archivement */
+  .archive_card_three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Education */
+  .timeline_div_edu {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+  .leftside_home_div .hi {
+    font-size: 16px;
+  }
+  .leftside_home_div h4 {
+    font-size: 15px;
+  }
+  .looking_br {
+    display: none;
+  }
+  .leftside_home_div .looking {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+  /* Aboutus */
+  .about_main_div {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .left_about .img_left_div {
+    width: 100%;
+  }
+  .right_about {
+    gap: 30px;
+  }
+  /* Projects */
+  .project_card_main_flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Archivements */
+  .archive_card_three {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Education */
+  .social_icon_div_education .icon_lang_edu_i:nth-child(6) {
+    display: none;
+  }
+  .social_icon_div_education .icon_lang_edu_i,
+  .social_icon_div_education .icon_lang_edu_i:nth-child(5) {
+    font-size: 40px;
+  }
+  /* contact us */
+  .education__div_inside_data {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .timeline_div_edu {
+    width: 18px;
+  }
+  .right_side_col_scl {
+    width: 70%;
+  }
+  .right_div_skills_nme > span {
+    font-size: 14px;
+    width: 100%;
+  }
+  .right_div_skills_nme {
+    width: 100%;
+  }
+
+  /* contact us */
+  .main_grid_div_contact {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+}
