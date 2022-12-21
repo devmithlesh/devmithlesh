@@ -130,3 +130,9 @@ a {
     left: 26px;
   }
 }
+
+@media (min-width: 1200px) {
+  body {
+    background: #eeecec;
+  }
+}
