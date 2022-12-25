@@ -57,7 +57,11 @@ const Contact = () => {
                     <p className="icons_bg_con">
                       <TfiEmail className="icons_contact_left" />
                     </p>
-                    <p>mithleshnirmal786123@gmail.com</p>
+                    <p>
+                      mithleshnirmal786123
+                      <br className="br_email" />
+                      @gmail.com
+                    </p>
                   </span>
                 </div>
                 <div>

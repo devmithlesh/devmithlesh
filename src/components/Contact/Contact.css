@@ -91,6 +91,10 @@
   }
 }
 
+.br_email {
+  display: none;
+}
+
 /* Right Side Input Area */
 
 form {
@@ -137,4 +141,19 @@ form label {
   font-family: var(--atterta);
   font-size: 14px;
   padding-bottom: 5px;
+}
+
+@media (max-width: 480px) {
+  .contact_main_div {
+    padding: 40px 25px 40px 25px;
+  }
+  /* contact us */
+  .main_grid_div_contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .br_email {
+    display: block;
+  }
 }

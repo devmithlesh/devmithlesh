@@ -232,3 +232,20 @@
   column-gap: 5px;
   padding-top: 5px;
 }
+
+/* mediaquery for phone  */
+
+@media (max-width: 480px) {
+  .education_main_div {
+    padding: 40px 25px 40px 25px;
+  }
+  .icon_lang_edu_i_boot {
+    display: none;
+  }
+  .social_icon_div_education {
+    padding: 20px 10px;
+  }
+  .right_div_skills_nme {
+    padding: 20px;
+  }
+}

@@ -5,13 +5,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* page note found */}
-          <Route path="*" element={<Nomatch />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="main_app_div_container">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* page note found */}
+            <Route path="*" element={<Nomatch />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 }

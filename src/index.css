@@ -134,5 +134,13 @@ a {
 @media (min-width: 1200px) {
   body {
     background: #eeecec;
+    width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 28px;
   }
 }

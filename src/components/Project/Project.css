@@ -68,3 +68,9 @@
   font-family: var(--poppins);
   background: var(--yellow);
 }
+
+@media (max-width: 480px) {
+  .project_main_div {
+    padding: 40px 25px 40px 25px;
+  }
+}

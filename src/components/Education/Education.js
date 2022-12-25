@@ -27,7 +27,7 @@ function Education() {
               <SiCss3 className="icon_lang_edu_i" />
               <FaReact className="icon_lang_edu_i" />
               <SiTailwindcss className="icon_lang_edu_i" />
-              <BsBootstrap className="icon_lang_edu_i" />
+              <BsBootstrap className="icon_lang_edu_i icon_lang_edu_i_boot" />
               <TbBrandJavascript className="icon_lang_edu_i" />
             </div>
 
