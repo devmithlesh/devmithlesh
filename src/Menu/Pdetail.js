@@ -1,4 +1,3 @@
-import Img from "../Images/img.jpeg";
 import { FiFacebook } from "react-icons/fi";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
@@ -11,7 +10,7 @@ function Pdetail() {
     <>
       <div className="personal_details">
         <div className="box">
-          <img src={Img} alt="Mithlesh" className="image-logo-menu" />
+          <img src="/assets/img/img.webp" alt="Mithlesh" className="image-logo-menu" />
         </div>
         <h3 className="name_user">
           Mithlesh

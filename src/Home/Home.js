@@ -1,13 +1,15 @@
 import React from "react";
-import About from "../components/About/About";
-import Archivement from "../components/Archivement/Archivement";
-import Project from "../components/Project/Project";
-import Navbar from "../Menu/Navbar";
-import Pdetail from "../Menu/Pdetail";
-import Contactus from "../components/Contact/Contact";
-import Education from "../components/Education/Education";
-import "./Home.css";
-import Footer from "../components/Footer/Footer";
+import Pdetail from '../Menu/Pdetail'
+import About from '../Pages/About/About'
+import Achievement from '../Pages/Achievement/Achievement'
+import Project from '../Pages/Project/Project'
+import Contactus from '../Pages/Contact/Contact'
+import Education from '../Pages/Education/Education'
+import './Home.css'
+import Footer from '../Pages/Footer/Footer'
+import Navbar from '../Menu/Navbar'
+
+
 function Home() {
   return (
     <>
@@ -48,7 +50,7 @@ function Home() {
           {/*----------------- Project Section ------------------ */}
           <Project />
           {/* ------------------ Archivements --------------------- */}
-          <Archivement />
+          <Achievement />
           {/*---------------------- Education ----------------------*/}
           <Education />
           {/*--------------------- Contact Form --------------------*/}
