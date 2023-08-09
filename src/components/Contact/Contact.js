@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { TfiEmail } from "react-icons/tfi";
 import { SlScreenSmartphone } from "react-icons/sl";
-import { BsTelephone } from "react-icons/bs";
+// import { BsTelephone } from "react-icons/bs";
 import { TfiLocationPin } from "react-icons/tfi";
 import { GiPistolGun } from "react-icons/gi";
 import { HiDotsHorizontal } from "react-icons/hi";
@@ -57,7 +57,7 @@ const Contact = () => {
                     <p className="icons_bg_con">
                       <TfiEmail className="icons_contact_left" />
                     </p>
-                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank" >
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank" rel="noopener noreferrer" >
                       <p>
                         mithleshnirmal786123
                         <br className="br_email" />
