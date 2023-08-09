@@ -34,7 +34,7 @@ function About() {
                   <p>Project Completed</p>
                 </div>
                 <div className="box_about">
-                  <span>0+</span>
+                  <span>6+</span>
                   {/* <p>Happy Customers</p> */}
                   <p>Practice Projects</p>
                 </div>
