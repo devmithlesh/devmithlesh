@@ -21,6 +21,7 @@
   width: fit-content;
   cursor: default;
 }
+
 .contact_details div .icons_bg_con {
   width: 30px;
   height: 30px;
@@ -32,6 +33,7 @@
   align-items: center;
   transition: 0.5s;
 }
+
 .contact_details div span:hover .icons_bg_con {
   background: var(--white);
   transform: translateX(5px);
@@ -40,8 +42,10 @@
 .contact_details div span .icons_contact_left {
   color: var(--black);
 }
+
 .contact_details div p {
   margin-right: 10px;
+  color: var(--black);
 }
 
 .contact_details h4 {
@@ -58,10 +62,22 @@
   animation: gunsooth 1.3s infinite;
 }
 
+.reddote {
+  color: red;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.fullname {
+  display: flex;
+  align-items: center;
+}
+
 @keyframes gunsooth {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(6deg);
   }
@@ -73,6 +89,7 @@
   margin-left: 5px;
   transition: 0.6s;
 }
+
 .contact_details h4 span .gun_magine {
   position: absolute;
   top: -1px;
@@ -85,6 +102,7 @@
     transform: translateX(1px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(40px);
     opacity: 1;
@@ -147,12 +165,14 @@ form label {
   .contact_main_div {
     padding: 40px 25px 40px 25px;
   }
+
   /* contact us */
   .main_grid_div_contact {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
   }
+
   .br_email {
     display: block;
   }

@@ -5,9 +5,9 @@ function Navbar() {
     <>
       <div className="navbar_main_div">
         <div className="nav_bar_main">
-          <button className="dark-mode">
+          {/* <button className="dark-mode">
             <i className="fa-solid fa-circle-half-stroke"></i>
-          </button>
+          </button> */}
           <div className="menu_options">
             <a href="#home" className="active_home">
               <i className="fa-solid fa-house-user"></i>

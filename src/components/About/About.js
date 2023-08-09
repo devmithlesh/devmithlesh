@@ -8,7 +8,7 @@ function About() {
         <div className="about_bg_top">
           <div className="about_div_in">
             <h2>
-              About <span className="text-yellow">Us</span>
+              About <span className="text-yellow">Me</span>
               <div className="animated_div_heading">
                 <span></span>
               </div>
@@ -26,20 +26,21 @@ function About() {
               </div>
               <div className="right_about">
                 <div className="box_about">
-                  <span>0+</span>
+                  <span>1+</span>
                   <p>Year Of Experience</p>
                 </div>
                 <div className="box_about">
-                  <span>8+</span>
+                  <span>3+</span>
                   <p>Project Completed</p>
                 </div>
                 <div className="box_about">
                   <span>0+</span>
-                  <p>Happy Customers</p>
+                  {/* <p>Happy Customers</p> */}
+                  <p>Practice Projects</p>
                 </div>
                 <div className="box_about">
                   <span>10+</span>
-                  <p>Certificates</p>
+                  <p>Certification</p>
                 </div>
               </div>
             </div>

@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="wrapper">
           <div className="contact_main_div" id="contact">
             <h2>
-              Contact <span className="text_h2_yellow"> Us</span>
+              Contact <span className="text_h2_yellow"> Me</span>
               <div className="animated_div_heading">
                 <span></span>
               </div>
@@ -57,11 +57,13 @@ const Contact = () => {
                     <p className="icons_bg_con">
                       <TfiEmail className="icons_contact_left" />
                     </p>
-                    <p>
-                      mithleshnirmal786123
-                      <br className="br_email" />
-                      @gmail.com
-                    </p>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank" >
+                      <p>
+                        mithleshnirmal786123
+                        <br className="br_email" />
+                        @gmail.com
+                      </p>
+                    </a>
                   </span>
                 </div>
                 <div>
@@ -69,17 +71,17 @@ const Contact = () => {
                     <p className="icons_bg_con">
                       <SlScreenSmartphone className="icons_contact_left" />
                     </p>
-                    <p>+918196969106</p>
+                    <a href="tel:+918196969106"> <p>+918196969106</p></a>
                   </span>
                 </div>
-                <div>
+                {/* <div>
                   <span>
                     <p className="icons_bg_con">
                       <BsTelephone className="icons_contact_left" />
                     </p>
                     <p>+11XXXXXX00</p>
                   </span>
-                </div>
+                </div> */}
                 <div>
                   <span>
                     <p className="icons_bg_con">
@@ -90,7 +92,8 @@ const Contact = () => {
                 </div>
               </div>
               <form ref={form} onSubmit={sendEmail}>
-                <label for="fullname">Full Name</label>
+                {/* <span className="reddote">*</span> */}
+                <label className="fullname" for="fullname">Full Name  </label>
                 <input type="text" name="fullName" id="fullname" required />
                 <label for="email">Email</label>
                 <input type="email" name="user_email" id="email" required />
