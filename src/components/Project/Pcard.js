@@ -8,7 +8,7 @@ function Pcard(props) {
           <img src={props.image} alt={props.alts} />
           <div className="content_div_project">
             <h4>{props.title}</h4>
-            <p>Architect & Engineer</p>
+            {/* <p>Architect & Engineer</p> */}
             <div className="code_view_div">
               <a href={props.button} target="_blank" rel="noopener noreferrer">
                 View Code

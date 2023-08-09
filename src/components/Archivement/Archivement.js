@@ -9,7 +9,7 @@ function Archivement() {
         <div className="wrapper">
           <div className="archive_main_div" id="archivement">
             <h2>
-              My <span className="text_h2_yellow"> Archivements</span>
+              My <span className="text_h2_yellow"> Achievements </span>
               <div className="animated_div_heading">
                 <span></span>
               </div>
