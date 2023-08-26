@@ -11,21 +11,21 @@ const Pdata = [
     image: "/assets/img/projects/food.webp",
     alts: "Food-ordring",
     weblink: "https://food-ordering-hub-mithlesh.netlify.app/",
-    title: "Food Ordering View ",
+    title: "Food Ordering Design ",
     button: "https://github.com/devmithlesh/food-ordering-website.git",
   },
   {
     image: "/assets/img/projects/figma.webp",
     alts: "Vigma to Reactjs",
     weblink: "https://assignment-2-15-9-22.netlify.app/",
-    title: "Figma to React Project",
+    title: "Figma to React Design",
     button: "https://github.com/devmithlesh/assignment-2--15-9-22.git",
   },
   {
     image: "/assets/img/projects/tour.webp",
     alts: "Rental-house",
     weblink: "https://house-rental-website-by-mithlesh.netlify.app/",
-    title: "Rentail website",
+    title: "Rentail website Design",
     button:
       "https://github.com/devmithlesh/house-rental-wesite-by-mithlesh.git",
   },
@@ -34,7 +34,7 @@ const Pdata = [
     image: "/assets/img/projects/discord.webp",
     alts: "Discord",
     weblink: "https://frosty-rosalind-c7620e.netlify.app/",
-    title: "Clone of Discord Desigen",
+    title: "Clone of Discord Design",
     button:
       "https://github.com/devmithlesh/Discord-web-in-react-js-by-mithlesh.git",
   },

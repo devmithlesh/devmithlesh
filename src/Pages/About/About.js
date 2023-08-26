@@ -38,7 +38,7 @@ function About() {
                 </div>
                 <div className="box_about">
                   <span>10+</span>
-                  <p>Certificates</p>
+                  <p>Certification</p>
                 </div>
               </div>
             </div>
