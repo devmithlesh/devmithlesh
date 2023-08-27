@@ -38,6 +38,14 @@ const Pdata = [
     button:
       "https://github.com/devmithlesh/Discord-web-in-react-js-by-mithlesh.git",
   },
+  {
+    image: "/assets/img/projects/rizeware.webp",
+    alts: "rizeware",
+    weblink: "https://static-page-one.netlify.app/",
+    title: "Home Rizeware Solution",
+    button:
+      "https://github.com/devmithlesh/homePage",
+  },
 ];
 
 export default Pdata;

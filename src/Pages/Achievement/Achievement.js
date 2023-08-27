@@ -15,6 +15,12 @@ function Archivement() {
                 <span></span>
               </div>
             </h2>
+
+
+            <div className="titleheading">
+              <p className="textsub">Pursuing a career as a frontend developer, equipped with online certificates in HTML, CSS, JavaScript & React.js.</p>
+            </div>
+
             <div className="archive_card_three">
               {Archdata.map((val, ind) => {
                 return (

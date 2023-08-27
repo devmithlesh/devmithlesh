@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Pdetail from '../Menu/Pdetail'
 import About from '../Pages/About/About'
 import Achievement from '../Pages/Achievement/Achievement'
@@ -11,16 +11,37 @@ import Navbar from '../Menu/Navbar'
 
 
 function Home() {
+
+  const [toggle, setToggle] = useState(false)
+
+  useEffect(() => {
+    if (toggle) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'visible';
+    }
+
+    return () => {
+      document.body.style.overflow = 'visible'; // Reset overflow when component unmounts
+    };
+  }, [toggle]);
+
   return (
     <>
       <div className="homediv_main" id="home">
         {/*------------------- Personal Details -------------------*/}
-        <div className="left_personal_details">
-          <Pdetail />
+        <div className={`left_personal_details ${toggle === true && 'active'}`}>
+          <Pdetail isActive={toggle} setActive={setToggle} />
         </div>
+
         <div className="home_div_main_feed">
           <div className="wrapper">
             <div className="leftside_home_div">
+
+              <div className="menudots" onClick={() => setToggle(true)}>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+
               <p className="hi">HI THERE !</p>
               <h1>
                 I'M Mithlesh <span className="text-yellow">Nirmal</span>
@@ -31,11 +52,12 @@ function Home() {
               </h4>
 
               <p className="looking">
-                Looking for an opportunity to work in a challenging position to
-                prove
-                <br class="looking_br" /> my computer science skills and utilize
-                my knowledge and intelligence
-                <br class="looking_br" /> in the growth of organization.
+                Seeking a challenging frontend developer position to demonstrate my proficiency in
+                programming languages including HTML, CSS, JavaScript & ReactJS.
+                I possess a strong ability to create responsive and visually appealing
+                frontend solutions that prioritize user experience and engagement.
+                {/* <br class="looking_br" /> 
+                <br class="looking_br" /> */}
               </p>
               <div className="btn_hireme">
                 <a href="tel:+918196969106" className="btn_hire">

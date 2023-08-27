@@ -1,6 +1,7 @@
 /*-------------- Google Fonts --------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Allerta&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +27,13 @@ html {
   width: 1200px;
   margin: 0 auto;
 }
+
 /* ---------- Wrapper ------------ */
 .wrapper {
   width: 94%;
   margin: 0 auto;
 }
+
 .text-yellow {
   color: var(--yellow);
   padding-left: 2px;
@@ -62,15 +65,18 @@ h3 {
   font-family: var(--poppins);
   font-style: normal;
 }
+
 h4 {
   font-family: var(--poppins);
 }
+
 p {
   font-size: 15px;
   font-weight: 400;
   font-family: var(--poppins);
   font-style: normal;
 }
+
 .border_line {
   width: 100%;
   height: 1px;
@@ -92,6 +98,7 @@ button:hover {
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -106,6 +113,7 @@ a {
   position: relative;
   overflow: hidden;
 }
+
 .animated_div_heading span {
   width: 50px;
   height: 5px;
@@ -123,9 +131,11 @@ a {
   0% {
     left: 26px;
   }
+
   50% {
     left: 84px;
   }
+
   100% {
     left: 26px;
   }

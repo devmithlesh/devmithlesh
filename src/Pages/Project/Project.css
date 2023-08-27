@@ -6,7 +6,7 @@
 
 .project_main_div h2 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .project_main_div h2 span {
@@ -16,7 +16,7 @@
 .project_main_div {
   padding: 40px 40px 50px 40px;
   background: var(--white);
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .card_project {
@@ -27,6 +27,7 @@
   overflow: hidden;
   border: 1px solid #ffff0082;
   border-radius: 3px;
+  height: 100%;
 }
 
 .card_project:hover {
@@ -63,14 +64,48 @@
 .code_view_div a {
   padding: 7px 6px;
   border-radius: 5px;
-  font-size: 12px;
-  color: var(--white);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--black);
   font-family: var(--poppins);
   background: var(--yellow);
+  transition: 0.4s;
 }
 
-@media (max-width: 480px) {
+.code_view_div a:hover {
+  background: rgb(255, 230, 0);
+}
+
+.titleheading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.textsub {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  max-width: 70%;
+  color: var(--black);
+  font-family: var(--poppins);
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .textsub {
+    max-width: 100%;
+  }
+
   .project_main_div {
     padding: 40px 25px 40px 25px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .textsub {
+    max-width: 100%;
   }
 }

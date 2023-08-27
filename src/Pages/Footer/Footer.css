@@ -1,5 +1,5 @@
 footer {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .main_div_footer {
@@ -26,6 +26,7 @@ footer {
   content: "";
   margin-left: 5px;
 }
+
 .footer_icons::before {
   width: 100px;
   height: 1px;
@@ -35,26 +36,30 @@ footer {
   margin-right: 5px;
 }
 
-.footer_icons .footer_icon_git,
-.footer_icon_link,
-.footer_icon_insta {
+.footer_icons a {
   font-size: 25px;
   margin: 0 10px;
   color: var(--black);
   transition: 0.5s;
 }
 
-.footer_icons .footer_icon_git:hover,
-.footer_icon_link:hover,
-.footer_icon_insta:hover {
-  color: var(--yellow);
+.footer_icons a:hover:nth-child(1) i {
+  color: #0e51e2;
+}
+
+.footer_icons a:hover:nth-child(2) i {
+  opacity: 0.8;
+}
+
+.footer_icons a:hover:nth-child(3) i {
+  color: #e60dc9;
 }
 
 .main_div_footer {
   text-align: center;
 }
 
-.main_div_footer > p {
+.main_div_footer>p {
   font-size: 15px;
   font-weight: var(--atterta);
   font-weight: 500;
@@ -63,6 +68,7 @@ footer {
 
 /* media query for mobile */
 @media (max-width: 480px) {
+
   /* footer section */
   .main_div_footer {
     padding: 40px 25px 40px 25px;

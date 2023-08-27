@@ -15,6 +15,11 @@ function Project() {
                 <span></span>
               </div>
             </h2>
+
+            <div className="titleheading">
+              <p className="textsub">my static landing page showcases my journey, skills, and accomplishments through elegant HTML , CSS and Js design.</p>
+            </div>
+
             <div className="project_card_main_flex">
               {Pdata.map((val, ind) => {
                 return (
