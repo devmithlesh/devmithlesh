@@ -23,8 +23,21 @@
 }
 
 .nav_bar_main button i {
-  font-size: 30px;
+  font-size: 26px;
+  animation: rotate 2.5s linear infinite;
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
 
 .menu_options {
   display: flex;
@@ -65,4 +78,10 @@
 .menu_options .active_home {
   background: var(--yellow);
   transition: 0.4s;
+}
+
+@media (max-width: 767px) {
+  .navbar_main_div {
+    display: none;
+  }
 }

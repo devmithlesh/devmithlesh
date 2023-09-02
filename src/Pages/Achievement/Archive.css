@@ -64,7 +64,7 @@
   transform: translate(-50%, -50%);
   font-size: 35px;
   color: var(--yellow);
-  background: rgba(0, 0, 0, 0.425);
+  background: var(--lightblack);
   width: 100%;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@
 .eyes_img>a {
   font-family: var(--poppins);
   font-size: 16px;
-  color: var(--white);
+  color: var(--yellow);
 }
 
 /* Media query for phone */

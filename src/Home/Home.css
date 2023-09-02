@@ -1,5 +1,9 @@
 .homediv_main {
   display: flex;
+  width: 100%;
+  max-width: 1280px;
+  position: relative;
+  /* overflow: hidden; */
   /* display: grid;
   grid-template-columns: repeat(3, 20% 74% 6%); */
 }
@@ -12,8 +16,9 @@
 }
 
 .home_div_main_feed {
-  background: #eeecec;
+  /* background: #eeecec; */
   width: 74%;
+  /* overflow: hidden; */
 }
 
 .leftside_home_div {
@@ -25,6 +30,7 @@
 .leftside_home_div .hi {
   font-size: 18px;
   font-family: var(--poppins);
+  color: var(--black);
 }
 
 .leftside_home_div h1 {
@@ -115,6 +121,20 @@
   display: none;
 }
 
+.menudots {
+  color: var(--black);
+}
+
+.preeloading {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 1024px) {
 
   /* Personal details leftside */
@@ -201,9 +221,6 @@
 }
 
 @media (max-width: 780px) {
-  .navbar_main_div {
-    display: none;
-  }
 
   .home_div_main_feed {
     width: 100%;
@@ -236,6 +253,15 @@
     right: 18px;
     cursor: pointer;
     display: block;
+  }
+
+  .settingicon {
+    top: 50px;
+    font-size: 18px;
+  }
+
+  .nav_bar_main.active {
+    left: 0;
   }
 
   .crossmenubar {

@@ -1,3 +1,9 @@
 img {
     max-width: 100%;
 }
+
+.appmainwrapper {
+    display: flex;
+    justify-content: center;
+    background: #eeecec;
+}

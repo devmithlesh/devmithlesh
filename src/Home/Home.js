@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from 'react';
 import Pdetail from '../Menu/Pdetail'
 import About from '../Pages/About/About'
 import Achievement from '../Pages/Achievement/Achievement'
@@ -8,81 +8,171 @@ import Education from '../Pages/Education/Education'
 import './Home.css'
 import Footer from '../Pages/Footer/Footer'
 import Navbar from '../Menu/Navbar'
+import Colorsidebar from "../Components/Colorsidebar/Colorsidebar";
+import '../index.css';
+import PreeLoading from './PreeLoading';
 
+const colorMappings = {
+  white: {
+    '--white': '#ffffff',
+    '--white-1': '#fff',
+    '--black': '#171717',
+    '--black-3': '#111827',
+    '--black-4': '#171717',
+    '--black-5': ' rgba(0, 0, 0, 0.5)',
+    '--grey-1': 'gray',
+  },
+  dark: {
+    '--white': '#171717',
+    '--white-1': '#262626',
+    '--black': '#fff',
+    '--black-3': '#404040',
+    '--black-4': '#fff',
+    '--black-5': '#404040',
+    '--grey-1': '#404040',
+  },
+  green: {
+    '--white': '#50b154',
+    '--black': '#fff',
+    '--scroll': '#50b154',
+    '--white-1': '#fff',
+    '--grey-1': 'green',
+  },
+  purple: {
+    '--white': '#634db5',
+    '--black': '#fff',
+    '--scroll': '#634db5',
+    '--white-1': '#fff',
+    '--grey-1': 'purple',
+  },
+  blue: {
+    '--white': '#0b48d3',
+    '--black': '#fff',
+    '--scroll': '#0b48d3',
+    '--white-1': '#fff',
+    '--grey-1': 'blue',
+  },
+};
 
 function Home() {
+  const [currentColor, setCurrentColor] = useState('white');
+
+  const handleColorChange = (color) => {
+    setCurrentColor(color);
+    const colorStyles = colorMappings[color];
+    for (const key in colorStyles) {
+      document.documentElement.style.setProperty(key, colorStyles[key]);
+    }
+  };
+
+  // --end
 
   const [toggle, setToggle] = useState(false)
+  const [toggleColor, settoggleColor] = useState()
 
   useEffect(() => {
     if (toggle) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'visible';
+      document.body.style.overflow = 'unset';
     }
 
     return () => {
-      document.body.style.overflow = 'visible'; // Reset overflow when component unmounts
+      document.body.style.overflow = 'unset'; // Reset overflow when component unmounts
     };
   }, [toggle]);
 
+
+
+  useEffect(() => {
+    if (toggleColor) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset'; // Reset overflow when component unmounts
+    };
+  }, [toggleColor]);
+
+  // Pree Loading
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate content loading delay
+    setTimeout(() => {
+      setLoading(false);
+    }, 1600); // Adjust the delay time as needed
+  }, []);
+
   return (
     <>
-      <div className="homediv_main" id="home">
-        {/*------------------- Personal Details -------------------*/}
-        <div className={`left_personal_details ${toggle === true && 'active'}`}>
-          <Pdetail isActive={toggle} setActive={setToggle} />
-        </div>
+      {loading ? <PreeLoading /> :
+        <div className="homediv_main" id="home">
+          {/*------------------- Personal Details -------------------*/}
+          <div className={`left_personal_details ${toggle === true && 'active'}`}>
+            <Pdetail isActive={toggle} setActive={setToggle} />
+          </div>
+        
+          <div className="home_div_main_feed">
+          <div className={`sidebarcolodiv ${toggleColor === true && 'active'}`}>
+            <Colorsidebar isActive={toggleColor} setisActive={settoggleColor} handleColorChange={handleColorChange} />
+          </div>
+            <div className="wrapper">
+              <div className="leftside_home_div">
 
-        <div className="home_div_main_feed">
-          <div className="wrapper">
-            <div className="leftside_home_div">
+                <div className="menudots" onClick={() => setToggle(true)}>
+                  <i class="fa-solid fa-bars"></i>
+                </div>
 
-              <div className="menudots" onClick={() => setToggle(true)}>
-                <i class="fa-solid fa-bars"></i>
-              </div>
+                <div className="menudots settingicon" onClick={() => settoggleColor(true)}>
+                  <i class="fa-solid fa-gear"></i>
+                </div>
 
-              <p className="hi">HI THERE !</p>
-              <h1>
-                I'M Mithlesh <span className="text-yellow">Nirmal</span>
-              </h1>
-              <h4 className="text-yellow ">
-                Front End
-                <span className="type-animation"> Developer </span>
-              </h4>
+                <p className="hi">HI THERE !</p>
+                <h1>
+                  I'M Mithlesh <span className="text-yellow">Nirmal</span>
+                </h1>
+                <h4 className="text-yellow ">
+                  Front End
+                  <span className="type-animation"> Developer </span>
+                </h4>
 
-              <p className="looking">
-                Seeking a challenging frontend developer position to demonstrate my proficiency in
-                programming languages including HTML, CSS, JavaScript & ReactJS.
-                I possess a strong ability to create responsive and visually appealing
-                frontend solutions that prioritize user experience and engagement.
-                {/* <br class="looking_br" /> 
+                <p className="looking">
+                  Seeking a challenging frontend developer position to demonstrate my proficiency in
+                  programming languages including HTML, CSS, JavaScript & ReactJS.
+                  I possess a strong ability to create responsive and visually appealing
+                  frontend solutions that prioritize user experience and engagement.
+                  {/* <br class="looking_br" /> 
                 <br class="looking_br" /> */}
-              </p>
-              <div className="btn_hireme">
-                <a href="tel:+918196969106" className="btn_hire">
-                  Hire Me <i className="fa-solid fa-user-tie"></i>
-                </a>
+                </p>
+                <div className="btn_hireme">
+                  <a href="tel:+918196969106" className="btn_hire">
+                    Hire Me <i className="fa-solid fa-user-tie"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/*-------------------- ABout File --------------------*/}
-          <About />
-          {/*----------------- Project Section ------------------ */}
-          <Project />
-          {/* ------------------ Archivements --------------------- */}
-          <Achievement />
-          {/*---------------------- Education ----------------------*/}
-          <Education />
-          {/*--------------------- Contact Form --------------------*/}
-          <Contactus />
-          {/*-------------------- Footer Section --------------------*/}
-          <Footer />
-        </div>
-        {/*------------------------ Navbar ------------------------*/}
-        <Navbar />
-      </div>
+            {/*-------------------- ABout File --------------------*/}
+            <About />
+            {/*----------------- Project Section ------------------ */}
+            <Project />
+            {/* ------------------ Archivements --------------------- */}
+            <Achievement />
+            {/*---------------------- Education ----------------------*/}
+            <Education />
+            {/*--------------------- Contact Form --------------------*/}
+            <Contactus />
+            {/*-------------------- Footer Section --------------------*/}
+            <Footer />
+          </div>
+          {/*------------------------ Navbar ------------------------*/}
+          <Navbar setisActive={settoggleColor} />
+        </div >
+      }
     </>
   );
 }

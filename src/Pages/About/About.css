@@ -114,7 +114,7 @@
   flex-direction: column;
   padding: 20px;
   overflow: hidden;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .box_about span {

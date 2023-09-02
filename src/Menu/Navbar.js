@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./Nav.css";
-function Navbar() {
+function Navbar({ setisActive }) {
 
   const [listActive, setListActive] = useState(1)
   return (
     <>
       <div className="navbar_main_div">
         <div className="nav_bar_main">
-          {/* <button className="dark-mode">
-            <i className="fa-solid fa-circle-half-stroke"></i>
-          </button> */}
+          <button className="dark-mode" onClick={() => setisActive(true)}>
+            <i class="fa-solid fa-gear"></i>
+          </button>
           <div className="menu_options">
             <a href="#home" className={`${listActive === 1 && 'active_home'}`} onClick={() => setListActive(1)}>
               <i className="fa-solid fa-house-user"></i>
