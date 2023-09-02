@@ -1,0 +1,155 @@
+.about_bg_top {
+  background: var(--white);
+  margin-top: 50px;
+  padding: 0 40px;
+}
+
+.about_div_in {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.about_main_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 0;
+}
+
+.left_about {
+  width: 100%;
+  text-align: left;
+}
+
+.left_about .img_left_div {
+  width: 80%;
+}
+
+.left_about .img_left_div img {
+  width: 100%;
+  transition: 0.4s;
+  padding: 6px;
+}
+
+.left_about .img_left_div img:hover {
+  transform: scale(1.1);
+}
+
+/* img animation */
+.img_left_div {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.img_left_div .b_img_lefta1 {
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background: var(--yellow);
+  top: 0;
+  left: 0;
+  transition: 0.8s;
+}
+
+.img_left_div:hover .b_img_lefta1 {
+  width: 100%;
+}
+
+.img_left_div .b_img_lefta2 {
+  position: absolute;
+  width: 3px;
+  height: 20%;
+  background: var(--yellow);
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+}
+
+.img_left_div:hover .b_img_lefta2 {
+  height: 100%;
+}
+
+.img_left_div .b_img_lefta3 {
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background: var(--yellow);
+  right: 0;
+  bottom: 0;
+  transition: 0.8s;
+}
+
+.img_left_div:hover .b_img_lefta3 {
+  width: 100%;
+}
+
+.img_left_div .b_img_lefta4 {
+  position: absolute;
+  width: 3px;
+  height: 20%;
+  background: var(--yellow);
+  top: 0;
+  left: 0;
+  transition: 0.8s;
+}
+
+.img_left_div:hover .b_img_lefta4 {
+  height: 100%;
+}
+
+/* --------- */
+.right_about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.box_about {
+  width: 170px;
+  height: 170px;
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+  /* cursor: pointer; */
+}
+
+.box_about span {
+  color: var(--white);
+  font-family: var(--atterta);
+  font-size: 25px;
+  font-weight: 400;
+  width: 55px;
+  height: 55px;
+  background: var(--yellow);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.box_about:hover span {
+  transform: rotate(360deg);
+  background: var(--white);
+  transition: 0.5s;
+  color: var(--black);
+  box-shadow: 5px 10px 100px 200px var(--yellow);
+}
+
+.box_about p {
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  font-family: var(--atterta);
+  z-index: 1;
+}
+
+.box_about:hover p {
+  color: var(--black);
+  font-weight: 500;
+}

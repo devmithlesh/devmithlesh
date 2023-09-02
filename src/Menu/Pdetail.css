@@ -5,17 +5,19 @@
   text-align: center;
   padding: 20px 20px 0 20px;
 }
+
 /*===== Menu img design in animation =====*/
 .box {
   position: relative;
   width: 150px;
   height: 150px;
   padding: 0px;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--black-5);
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
 }
+
 .box::before {
   content: "";
   position: absolute;
@@ -24,6 +26,7 @@
   transition: 0.5s;
   animation: animate 7s linear infinite;
 }
+
 .box:hover::before {
   inset: -20px 0px;
 }
@@ -32,6 +35,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(360deg);
   }
@@ -66,6 +70,7 @@
   font-family: var(--atterta);
   margin-top: 5px;
 }
+
 .social-icons {
   margin: 10px 0;
 }
@@ -74,28 +79,33 @@
   font-size: 22px;
   margin-right: 10px;
   cursor: pointer;
+  color: var(--black);
 }
 
 .social-icons a {
   color: var(--black);
 }
+
 .social-icons a .facebook:hover {
-  color: #1e479f;
+  color: #1350d1;
 }
+
 .social-icons a .linkedin:hover {
-  color: #1e479f;
+  color: #0a4cdb;
 }
 
 .social-icons a .github:hover {
   opacity: 80%;
 }
+
 .social-icons a .insta:hover {
-  color: #8a3ab9;
+  color: #b519d4;
 }
 
 .social-icons .i_tag_social:hover {
   animation: socialicon 2s infinite;
 }
+
 @keyframes socialicon {
   50% {
     transform: rotate(180deg);
@@ -109,6 +119,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .age p:first-child,
 .residence p:first-child,
 .address p:first-child {
@@ -132,8 +143,9 @@
   font-style: normal;
   text-align: left;
 }
+
 .language_detail .lg_inside p,
-.skills > p {
+.skills>p {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,18 +158,21 @@
   height: auto;
   background: #ccc;
 }
-.language_detail .progress > .pro100 {
+
+.language_detail .progress>.pro100 {
   width: 100%;
   padding: 2px;
   background: var(--yellow);
 }
-.language_detail .progress > .pro80,
+
+.language_detail .progress>.pro80,
 .pro_div_in80 {
   width: 80%;
   padding: 2px;
   background: var(--yellow);
 }
-.language_detail .progress > .pro40 {
+
+.language_detail .progress>.pro40 {
   width: 40%;
   padding: 2px;
   background: var(--yellow);
@@ -180,9 +195,11 @@
   margin: 15px 0;
   text-align: left;
 }
+
 .extra_know p {
   margin: 10px 0;
 }
+
 .extra_know p i {
   color: var(--yellow);
   margin-right: 5px;
@@ -208,7 +225,7 @@
 }
 
 .button_resume button a {
-  color: var(--white);
+  color: var(--black);
   padding: 18px 20px;
   background: var(--yellow);
   display: flex;
@@ -238,6 +255,7 @@
 .button_resume button:focus .hioutlinedown {
   animation: downanimate 1s ease-in-out;
 }
+
 @keyframes downanimate {
   50% {
     transform: rotate(180deg);
