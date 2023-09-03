@@ -121,7 +121,8 @@
   display: none;
 }
 
-.menudots {
+.menudots,
+.crossmenubar {
   color: var(--black);
 }
 
@@ -149,7 +150,7 @@
 
   /* Home */
   .leftside_home_div .looking {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   /* aboutus */
@@ -244,6 +245,7 @@
     max-height: 100vh;
     overflow-y: auto;
     position: relative;
+    padding-bottom: 140px;
   }
 
   .menudots,

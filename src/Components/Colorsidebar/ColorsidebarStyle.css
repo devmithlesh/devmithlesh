@@ -99,10 +99,23 @@
     border: 1px solid var(--black);
 }
 
-.colorwrapper .resetbtn {
-    background: rgb(202, 18, 18);
-    color: #fff;
+.backtochange{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.backtochange .resetbtn {
+    background: transparent;
+    color: var(--black);
     border: 1px solid var(--black);
+    padding: 8px 30px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.backtochange .resetbtn:hover {
+    background: var(--black);
+    color: var(--white);
 }
 
 .crossbar {

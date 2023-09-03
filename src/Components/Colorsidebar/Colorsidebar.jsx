@@ -1,6 +1,6 @@
 import React from 'react'
 import './ColorsidebarStyle.css'
-const Colorsidebar = ({currentColor, handleColorChange, setisActive, isActive }) => {
+const Colorsidebar = ({ currentColor, handleColorChange, setisActive, isActive }) => {
     return (
 
         <div className={`colorwrapper ${isActive === true && 'active'}`}>
@@ -30,10 +30,12 @@ const Colorsidebar = ({currentColor, handleColorChange, setisActive, isActive })
                     <div className="bluebtn themebtn" onClick={() => handleColorChange('blue')}></div>
                     <p>Blue</p>
                 </div>
-                <div>
-                    <div className="resetbtn themebtn" onClick={() => handleColorChange('white')}></div>
-                    <p>Reset</p>
-                </div>
+
+            </div>
+
+            <div className='backtochange'>
+                <button className="resetbtn" onClick={() => handleColorChange('white')}>Reset</button>
+
             </div>
         </div>
     )

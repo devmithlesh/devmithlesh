@@ -23,7 +23,7 @@ const colorMappings = {
     '--grey-1': 'gray',
     '--black-6': '#171717',
     '--yellow': '#ffbf00',
-    '--scroll': '#111827',
+    '--scroll': '#ffbf00',
   },
   dark: {
     '--white': '#171717',
@@ -169,7 +169,10 @@ function Home() {
                 <br class="looking_br" /> */}
                 </p>
                 <div className="btn_hireme">
-                  <a href="tel:+918196969106" className="btn_hire btnsame">
+                  <a href="https://devmithlesh-resume.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn_hire btnsame">
                     Hire Me <i className="fa-solid fa-user-tie"></i>
                   </a>
                 </div>
