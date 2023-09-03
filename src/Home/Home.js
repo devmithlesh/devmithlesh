@@ -138,7 +138,7 @@ function Home() {
 
           <div className="home_div_main_feed">
             <div className={`sidebarcolodiv ${toggleColor === true && 'active'}`}>
-              <Colorsidebar isActive={toggleColor} setisActive={settoggleColor} handleColorChange={handleColorChange} />
+              <Colorsidebar isActive={toggleColor} setisActive={settoggleColor} handleColorChange={handleColorChange} currentColor={currentColor} />
             </div>
             <div className="wrapper">
               <div className="leftside_home_div">

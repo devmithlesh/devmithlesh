@@ -1,6 +1,6 @@
 import React from 'react'
 import './ColorsidebarStyle.css'
-const Colorsidebar = ({ handleReset, handleColorChange, setisActive, isActive }) => {
+const Colorsidebar = ({currentColor, handleColorChange, setisActive, isActive }) => {
     return (
 
         <div className={`colorwrapper ${isActive === true && 'active'}`}>
