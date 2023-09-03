@@ -52,15 +52,15 @@ function Pdetail({ isActive, setActive }) {
         {/* Address Details */}
         <div className="landmark">
           <div className="age">
-            <p>Age</p>
+            <p className="btnsame">Age</p>
             <p>21</p>
           </div>
           <div className="residence">
-            <p>Residence</p>
+            <p className="btnsame">Residence</p>
             <p>PB08</p>
           </div>
           <div className="address">
-            <p>Address</p>
+            <p className="btnsame">Address</p>
             <p>Punjab, India</p>
           </div>
         </div>
@@ -166,7 +166,7 @@ function Pdetail({ isActive, setActive }) {
         </div>
         <div className="button_resume">
           <button>
-            <a
+            <a className="btnsame"
               href="https://devmithlesh-resume.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"

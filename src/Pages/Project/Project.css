@@ -66,14 +66,14 @@
   border-radius: 5px;
   font-size: 10px;
   font-weight: 600;
-  color: var(--black);
+  /* color: var(--black); */
   font-family: var(--poppins);
   background: var(--yellow);
   transition: 0.4s;
 }
 
 .code_view_div a:hover {
-  background: rgb(255, 230, 0);
+  background: var(--yellow-1);
 }
 
 .titleheading {

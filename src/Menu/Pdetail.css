@@ -225,7 +225,7 @@
 }
 
 .button_resume button a {
-  color: var(--black);
+  /* color: var(--black); */
   padding: 18px 20px;
   background: var(--yellow);
   display: flex;

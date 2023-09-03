@@ -94,7 +94,7 @@ const Contact = () => {
                 <input type="tel" name="phoneno" id="mobile" />
                 <label for="message">Message</label>
                 <textarea name="textBox" id="message" required />
-                <input type="submit" value="Send" className="btn_submit" />
+                <input type="submit" value="Send" className="btn_submit btnsame" />
               </form>
             </div>
           </div>

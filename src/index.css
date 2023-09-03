@@ -11,6 +11,7 @@
 :root {
   /* Colors */
   --yellow: #ffbf00;
+  --yellow-1: rgb(255, 230, 0);
   --white: #ffffff;
   --white-1: #fff;
   --black: #171717;
@@ -18,7 +19,8 @@
   --black-2: #404040;
   --black-3: #111827;
   --black-4: #171717;
-  --scroll: #171717;
+  --black-6: #171717;
+  --scroll: var(--yellow);
   --black-5: rgba(0, 0, 0, 0.5);
   --lightblack: rgba(0, 0, 0, 0.425);
   --lightgray: #eeecec;
@@ -120,7 +122,7 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  color: var(--black);
+  color: var(--black-6);
 }
 
 button:hover {
@@ -134,6 +136,14 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.btnsame {
+  color: var(--black-6);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
 
 /*--------------- After Heading Animation --------------*/

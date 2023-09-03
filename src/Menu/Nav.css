@@ -11,20 +11,19 @@
   position: sticky;
   top: 0;
   right: 0;
+  transition: 0.4s;
 }
 
-.nav_bar_main button {
+.nav_bar_main .dark-mode {
   margin-bottom: 50px;
   background: none;
 }
 
-.nav_bar_main button:hover {
-  background: none !important;
-}
-
-.nav_bar_main button i {
+.nav_bar_main .dark-mode i {
   font-size: 26px;
   animation: rotate 2.5s linear infinite;
+  cursor: pointer;
+  color: var(--black);
 }
 
 @keyframes rotate {
@@ -37,7 +36,6 @@
   }
 
 }
-
 
 .menu_options {
   display: flex;
@@ -78,6 +76,10 @@
 .menu_options .active_home {
   background: var(--yellow);
   transition: 0.4s;
+}
+
+.menu_options .active_home i {
+  color: var(--black-6);
 }
 
 @media (max-width: 767px) {

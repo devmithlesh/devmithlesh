@@ -4,14 +4,37 @@ const Colorsidebar = ({ handleReset, handleColorChange, setisActive, isActive })
     return (
 
         <div className={`colorwrapper ${isActive === true && 'active'}`}>
-            <div className="crossbar" onClick={() => setisActive(false)}>
+            <div className="crossbar mb-20" onClick={() => setisActive(false)}>
                 <i class="fa-solid fa-xmark"></i>
             </div>
-            <button className="darkbtn" onClick={() => handleColorChange('dark')}>Dark</button>
-            <button className="greenbtn" onClick={() => handleColorChange('green')}>Green</button>
-            <button className="purplebtn" onClick={() => handleColorChange('purple')}>Purple</button>
-            <button className="bluebtn" onClick={() => handleColorChange('blue')}>Blue</button>
-            <button className="resetbtn" onClick={() => handleColorChange('white')}>Reset</button>
+            <p>Dark Theme</p>
+            <div>
+                <div className="darkbtn themebtn" onClick={() => handleColorChange('dark')}></div>
+                <p>Dark Mode</p>
+            </div>
+
+            <div className="border_line"></div>
+
+            <p>Light Theme </p>
+
+            <div className="lightthemediv">
+                <div className=''>
+                    <div className="greenbtn themebtn" onClick={() => handleColorChange('green')}></div>
+                    <p>Green</p>
+                </div>
+                <div>
+                    <div className="purplebtn themebtn" onClick={() => handleColorChange('purple')}></div>
+                    <p>Purple</p>
+                </div>
+                <div>
+                    <div className="bluebtn themebtn" onClick={() => handleColorChange('blue')}></div>
+                    <p>Blue</p>
+                </div>
+                <div>
+                    <div className="resetbtn themebtn" onClick={() => handleColorChange('white')}></div>
+                    <p>Reset</p>
+                </div>
+            </div>
         </div>
     )
 }

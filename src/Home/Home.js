@@ -21,6 +21,9 @@ const colorMappings = {
     '--black-4': '#171717',
     '--black-5': ' rgba(0, 0, 0, 0.5)',
     '--grey-1': 'gray',
+    '--black-6': '#171717',
+    '--yellow': '#ffbf00',
+    '--scroll': '#111827',
   },
   dark: {
     '--white': '#171717',
@@ -30,27 +33,25 @@ const colorMappings = {
     '--black-4': '#fff',
     '--black-5': '#404040',
     '--grey-1': '#404040',
+    '--scroll': '#171717',
   },
   green: {
-    '--white': '#50b154',
-    '--black': '#fff',
-    '--scroll': '#50b154',
-    '--white-1': '#fff',
-    '--grey-1': 'green',
+    '--yellow': 'green',
+    '--black-6': '#fff',
+    '--yellow-1': 'green',
+    '--scroll': 'green',
   },
   purple: {
-    '--white': '#634db5',
-    '--black': '#fff',
-    '--scroll': '#634db5',
-    '--white-1': '#fff',
-    '--grey-1': 'purple',
+    '--yellow': 'purple',
+    '--black-6': '#fff',
+    '--yellow-1': 'purple',
+    '--scroll': 'purple',
   },
   blue: {
-    '--white': '#0b48d3',
-    '--black': '#fff',
-    '--scroll': '#0b48d3',
-    '--white-1': '#fff',
-    '--grey-1': 'blue',
+    '--yellow': 'blue',
+    '--black-6': '#fff',
+    '--yellow-1': 'blue',
+    '--scroll': 'blue',
   },
 };
 
@@ -101,10 +102,29 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate content loading delay
     setTimeout(() => {
       setLoading(false);
-    }, 1600); // Adjust the delay time as needed
+    }, 1600);
+  }, []);
+
+
+  // onscroll div setting button
+  const [isHidden, setIsHidden] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsHidden(true);
+      } else {
+        setIsHidden(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
@@ -115,11 +135,11 @@ function Home() {
           <div className={`left_personal_details ${toggle === true && 'active'}`}>
             <Pdetail isActive={toggle} setActive={setToggle} />
           </div>
-        
+
           <div className="home_div_main_feed">
-          <div className={`sidebarcolodiv ${toggleColor === true && 'active'}`}>
-            <Colorsidebar isActive={toggleColor} setisActive={settoggleColor} handleColorChange={handleColorChange} />
-          </div>
+            <div className={`sidebarcolodiv ${toggleColor === true && 'active'}`}>
+              <Colorsidebar isActive={toggleColor} setisActive={settoggleColor} handleColorChange={handleColorChange} />
+            </div>
             <div className="wrapper">
               <div className="leftside_home_div">
 
@@ -149,7 +169,7 @@ function Home() {
                 <br class="looking_br" /> */}
                 </p>
                 <div className="btn_hireme">
-                  <a href="tel:+918196969106" className="btn_hire">
+                  <a href="tel:+918196969106" className="btn_hire btnsame">
                     Hire Me <i className="fa-solid fa-user-tie"></i>
                   </a>
                 </div>
@@ -170,7 +190,7 @@ function Home() {
             <Footer />
           </div>
           {/*------------------------ Navbar ------------------------*/}
-          <Navbar setisActive={settoggleColor} />
+          <Navbar setisActive={settoggleColor} isHidden={isHidden} />
         </div >
       }
     </>

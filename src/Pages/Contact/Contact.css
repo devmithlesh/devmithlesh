@@ -132,6 +132,9 @@ form textarea {
   margin-bottom: 15px;
   border-radius: 2px;
   transition: 0.5s;
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
 }
 
 form input:focus,
