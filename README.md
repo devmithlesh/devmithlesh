@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **React js, Tailwind css**
 
-- 👨‍💻 All of my projects are available at [https://portfolio-mithlesh.netlify.app/](https://portfolio-mithlesh.netlify.app/)
+- 👨‍💻 All of my projects are available at https://devmithlesh.netlify.app/
 
 - 📫 How to reach me **mithleshnirmal786123@gmail.com**
 
