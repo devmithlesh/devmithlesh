@@ -87,3 +87,13 @@
     display: none;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar_main_div {
+    width: 9%;
+  }
+
+  .settingicon {
+    display: none;
+  }
+}

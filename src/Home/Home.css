@@ -260,6 +260,10 @@
     font-size: 18px;
   }
 
+  .settingicon i {
+    animation: rotate 2.5s linear infinite;
+  }
+
   .nav_bar_main.active {
     left: 0;
   }
