@@ -9,7 +9,6 @@ function Navbar({ setisActive, isHidden }) {
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    const tab1Offset = 0;
     const tab2Offset = 400;
     const tab3Offset = 1200;
     const tab4Offset = 2000;

@@ -20,7 +20,7 @@ const Resume = () => {
                 <div class="container">
                     <header>
                         <div class="left_header">
-                            <img src="/assets/logo.jpeg" alt="Photo" class="profile" />
+                            <img src="/assets/logo.jpeg" alt="logo" class="profile" />
                             <div class="details">
                                 <h2>Mithlesh Nirmal</h2>
                                 <h3>Front End Web Developer</h3>
@@ -32,15 +32,15 @@ const Resume = () => {
                         </div>
                         <div class="right_header">
                             <div class="contact1">
-                                <a href="tel:+918196969106" rel="noopener noreferrer">+918196969106</a>
+                                <a href="tel:+918196969106" rel="noopener noreferrer" className='detailslist'>+918196969106</a>
                                 <img src="/assets/icon-things1.png" alt="Phone" class="contact_icons" />
                             </div>
                             <div class="email-div contact1">
-                                <a href="mailto:mithleshnirmal786@gmail.com" rel="noopener noreferrer">mithleshnirmal786@gmail.com</a>
+                                <a href="mailto:mithleshnirmal786@gmail.com" rel="noopener noreferrer" className='detailslist'>mithleshnirmal786@gmail.com</a>
                                 <img src="/assets/icon-things3.png" alt="email" class="contact_icons2" />
                             </div>
                             <div class="contact1">
-                                <a href="#" rel="noopener noreferrer">Punjab, India</a>
+                                <div className='detailslist'>Punjab, India</div>
                                 <img src="/assets/icon-things2.png" alt="location" class="contact_icons" />
                             </div>
                         </div>
