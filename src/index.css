@@ -199,3 +199,23 @@ a {
     font-size: 28px;
   }
 }
+
+/* nomatch */
+.NoMatchWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+
+.btnNomatch button {
+  padding: 12px 40px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
