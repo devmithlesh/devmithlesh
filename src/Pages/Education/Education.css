@@ -86,9 +86,6 @@
   color: var(--yellow);
 }
 
-.social_icon_div_education .icon_lang_edu_i:nth-child(6) {
-  color: #dfe608;
-}
 
 .social_icon_div_education .icon_lang_edu_i:nth-child(6):hover {
   transform: translateY(10px);

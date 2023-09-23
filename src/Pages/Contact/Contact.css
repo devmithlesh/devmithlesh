@@ -39,8 +39,20 @@
   transform: translateX(5px);
 }
 
+.contact_details div span .icons_contact_left path {
+  transition: 0.4s;
+}
+
+.contact_details div span:hover .icons_contact_left path {
+  fill: var(--black);
+}
+
 .contact_details div span .icons_contact_left {
   color: var(--black);
+}
+
+.icons_contact_left path {
+  fill: var(--black-7);
 }
 
 .contact_details div p {

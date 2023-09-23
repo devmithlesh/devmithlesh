@@ -1,0 +1,433 @@
+/* Global Define Text */
+.ResumeMainDev {
+    width: 100%;
+    background: #e6e4e4;
+}
+
+.ResumeMainDev h2 {
+    font-family: var(--atterta);
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+.ResumeMainDev h4 {
+    font-size: 14px;
+    font-family: var(--atterta);
+    color: var(--black);
+    letter-spacing: 0.3px;
+}
+
+.ResumeMainDev p {
+    font-size: 12px;
+    font-family: var(--atterta);
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.ResumeMainDev h3 {
+    font-size: 13px;
+    font-family: var(--atterta);
+    font-weight: 500;
+}
+
+.ResumeMainDev a {
+    text-decoration: none;
+}
+
+.ResumeMainDev li {
+    list-style: none;
+}
+
+/*---------- Start Body Of Resume -----------*/
+.ResumeMainDev .wrapper {
+    width: 100%;
+}
+
+.ResumeMainDev .button_design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #e6e4e4;
+    border-bottom: 1px solid var(--black);
+    z-index: 1;
+}
+
+.ResumeMainDev button {
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid var(--black);
+    padding: 10px 25px;
+    cursor: pointer;
+    color: var(--lightblacktext);
+}
+
+.ResumeMainDev button:hover {
+    background: var(--black);
+    color: var(--white);
+    transition: 0.4s;
+}
+
+.ResumeMainDev .left_btn a {
+    font-family: var(--atterta);
+    font-size: 12px;
+    background: transparent;
+    border: 1px solid var(--black);
+    padding: 10px 25px;
+    cursor: pointer;
+    color: var(--lightblacktext);
+}
+
+.ResumeMainDev .left_btn a:hover {
+    color: var(--white);
+    background: var(--black);
+    transition: 0.4s;
+}
+
+.ResumeMainDev .container {
+    width: 21cm;
+    height: 29.7cm;
+    background: var(--white);
+    margin: 0 auto;
+    padding: 55px;
+}
+
+/*-------------------- Header Sart ---------------------*/
+.ResumeMainDev header {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Left Side of Header */
+.ResumeMainDev .left_header {
+    display: flex;
+}
+
+.ResumeMainDev .left_header .profile {
+    width: 25%;
+}
+
+.ResumeMainDev .details {
+    padding-left: 20px;
+}
+
+.ResumeMainDev .details>h3 {
+    margin-top: 5px;
+}
+
+.ResumeMainDev .details div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.ResumeMainDev .details div a {
+    font-size: 12px;
+    color: var(--black);
+    font-family: var(--atterta);
+}
+
+.ResumeMainDev .details div a:hover {
+    color: var(--blue);
+}
+
+.ResumeMainDev .details div a:first-child {
+    margin-bottom: 10px;
+}
+
+/*------------------------ Right Side Header -----------------------*/
+.ResumeMainDev .right_header {
+    text-align: right;
+}
+
+.ResumeMainDev .right_header div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 5px;
+}
+
+.ResumeMainDev .right_header div:first-child {
+    padding-top: 0;
+}
+
+.ResumeMainDev .right_header div a {
+    padding-right: 10px;
+    color: var(--black);
+    font-family: var(--atterta);
+    font-size: 12px;
+}
+
+.ResumeMainDev .email-div {
+    margin-right: 4px;
+}
+
+.ResumeMainDev .email-div a {
+    margin-right: 5px;
+}
+
+.ResumeMainDev .contact_icons {
+    width: 10%;
+}
+
+.ResumeMainDev .contact_icons2 {
+    width: 7%;
+}
+
+/*------------------------------------- objective ------------------------------*/
+.ResumeMainDev .objective {
+    margin: 30px 0;
+}
+
+.ResumeMainDev .objective h2 {
+    margin-bottom: 10px;
+}
+
+.ResumeMainDev .border_obj {
+    width: 100%;
+    height: 1px;
+    background: var(--black);
+    position: relative;
+}
+
+.ResumeMainDev .border_obj .point_obj {
+    width: 10px;
+    height: 5px;
+    background: var(--white);
+    padding: 6px;
+    position: absolute;
+    border: 1px solid var(--black);
+    top: -7px;
+    right: 0;
+}
+
+/*  <!--------- Divide Two Side Left or Right Side ---------> */
+.ResumeMainDev .main_project_skill {
+    display: grid;
+    grid-template-columns: repeat(2, 55% 40%);
+    gap: 30px;
+}
+
+.ResumeMainDev .project_div {
+    margin: 30px 0;
+}
+
+.ResumeMainDev .project_div h2 {
+    margin-bottom: 10px;
+}
+
+.ResumeMainDev .project_div .tr_div h4 {
+    margin-bottom: 15px;
+}
+
+.ResumeMainDev .pro_links h4 {
+    margin-top: 15px;
+}
+
+.ResumeMainDev .pro_links h4 {
+    margin-bottom: 10px;
+}
+
+.ResumeMainDev .pro_links ul li {
+    padding: 5px 0;
+}
+
+.ResumeMainDev .pro_links a {
+    font-size: 12px;
+    font-family: var(--atterta);
+    color: var(--black);
+    transition: 0.4s;
+}
+
+.ResumeMainDev .pro_links a:hover {
+    color: var(--blue);
+}
+
+.ResumeMainDev .tech {
+    margin-top: 15px;
+}
+
+.ResumeMainDev .tech h4 {
+    margin-bottom: 10px;
+}
+
+.ResumeMainDev .after-traning-border {
+    width: 100%;
+}
+
+/*---------------------- Education Start ------------------------*/
+.ResumeMainDev .education {
+    margin-top: 30px;
+}
+
+.ResumeMainDev .education h2 {
+    margin-bottom: 15px;
+}
+
+.ResumeMainDev .tenth {
+    margin-bottom: 15px;
+}
+
+.ResumeMainDev .tenth h4 {
+    margin-bottom: 10px;
+}
+
+.ResumeMainDev .tenth span,
+.ResumeMainDev .sr-sec span {
+    font-size: 13px;
+    font-family: var(--atterta);
+    color: var(--black);
+}
+
+.ResumeMainDev .tenth p {
+    margin-top: 5px;
+}
+
+.ResumeMainDev .sr-sec h4 {
+    margin-bottom: 10px;
+}
+
+.ResumeMainDev .sr-sec p {
+    margin-top: 5px;
+}
+
+.ResumeMainDev .graducation {
+    margin-top: 15px;
+}
+
+.ResumeMainDev .graducation h4 {
+    margin-bottom: 10px;
+}
+
+.ResumeMainDev .graducation span {
+    font-size: 13px;
+    font-family: var(--atterta);
+    color: var(--black);
+}
+
+.ResumeMainDev .graducation p {
+    margin-top: 10px;
+}
+
+/*----------- Right Side Pro Skills ----------------*/
+.ResumeMainDev .pro_skills_div div h2 {
+    margin-top: 30px;
+}
+
+.ResumeMainDev .skill_type>p {
+    margin: 10px 0;
+}
+
+.ResumeMainDev .pro_skills_div .div_pro_s {
+    margin-bottom: 30px;
+}
+
+.ResumeMainDev .strength_progress {
+    width: 150px;
+    border: 1px solid var(--black);
+    position: relative;
+    padding: 4px;
+}
+
+.ResumeMainDev .skill_type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ResumeMainDev .strength_progress>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    background: var(--black);
+    padding: 4px;
+}
+
+.ResumeMainDev .progress_color1 {
+    width: 60% !important;
+    background: var(--black);
+}
+
+.ResumeMainDev .progress_color {
+    width: 40% !important;
+    background: var(--black);
+}
+
+/* ------------------ Strengths ----------------------- */
+.ResumeMainDev .strengths_main {
+    margin-bottom: 30px;
+}
+
+.ResumeMainDev .certi_lang p {
+    margin-top: 10px;
+}
+
+/*------------------- Border Right Side -------------------*/
+.ResumeMainDev .pro_skills_div {
+    position: relative;
+}
+
+.ResumeMainDev .transing_main_div {
+    margin-right: 20px;
+}
+
+.ResumeMainDev .border_rightside {
+    width: 1px;
+    height: 755px;
+    background: var(--black);
+    position: absolute;
+    top: 25px;
+    left: -25px;
+}
+
+.ResumeMainDev .border_rightside>span {
+    width: 10px;
+    height: 5px;
+    background: var(--white);
+    padding: 6px;
+    position: absolute;
+    border: 1px solid var(--black);
+    left: -6px;
+    bottom: 0;
+}
+
+.ResumeMainDev .contact1 a,
+.ResumeMainDev .contact1 img {
+    transition: 0.4s;
+}
+
+.ResumeMainDev .contact1:hover a {
+    color: var(--blue);
+}
+
+.ResumeMainDev .contact1:hover img {
+    transform: translateX(-4px);
+}
+
+@media print {
+    .ResumeMainDev .button_design {
+        display: none;
+    }
+
+    .ResumeMainDev .container {
+        display: block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .ResumeMainDev .wrapper {
+        overflow: auto;
+    }
+
+    .ResumeMainDev .button_design {
+        padding: 8px 20px;
+    }
+}

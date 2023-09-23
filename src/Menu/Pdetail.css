@@ -224,7 +224,7 @@
   justify-content: center;
 }
 
-.button_resume button a {
+.button_resume button {
   /* color: var(--black); */
   padding: 18px 20px;
   background: var(--yellow);

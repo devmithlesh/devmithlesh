@@ -11,6 +11,7 @@ import Navbar from '../Menu/Navbar'
 import Colorsidebar from "../Components/Colorsidebar/Colorsidebar";
 import '../index.css';
 import PreeLoading from './PreeLoading';
+import { useNavigate } from 'react-router-dom';
 
 const colorMappings = {
   white: {
@@ -24,6 +25,9 @@ const colorMappings = {
     '--black-6': '#171717',
     '--yellow': '#ffbf00',
     '--scroll': '#ffbf00',
+    '--blue': 'rgb(47, 84, 150)',
+    '--yellow-1': '#ffbf00',
+    '--black-7': '#121212',
   },
   dark: {
     '--white': '#171717',
@@ -34,24 +38,31 @@ const colorMappings = {
     '--black-5': '#404040',
     '--grey-1': '#404040',
     '--scroll': '#171717',
+    '--blue': 'rgb(47, 84, 150)',
   },
   green: {
     '--yellow': 'green',
     '--black-6': '#fff',
     '--yellow-1': 'green',
     '--scroll': 'green',
+    '--blue': 'green',
+    '--black-7': '#fff',
   },
   purple: {
     '--yellow': 'purple',
     '--black-6': '#fff',
     '--yellow-1': 'purple',
     '--scroll': 'purple',
+    '--blue': 'purple',
+    '--black-7': '#fff',
   },
   blue: {
     '--yellow': 'blue',
     '--black-6': '#fff',
     '--yellow-1': 'blue',
     '--scroll': 'blue',
+    '--blue': 'blue',
+    '--black-7': '#fff',
   },
 };
 
@@ -65,6 +76,8 @@ function Home() {
       document.documentElement.style.setProperty(key, colorStyles[key]);
     }
   };
+
+  const navigate = useNavigate()
 
   // --end
 
@@ -127,6 +140,9 @@ function Home() {
     };
   }, []);
 
+
+
+
   return (
     <>
       {loading ? <PreeLoading /> :
@@ -169,12 +185,9 @@ function Home() {
                 <br class="looking_br" /> */}
                 </p>
                 <div className="btn_hireme">
-                  <a href="https://devmithlesh-resume.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn_hire btnsame">
+                  <button className="btn_hire btnsame" onClick={() => navigate('/resume')}>
                     Hire Me <i className="fa-solid fa-user-tie"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
