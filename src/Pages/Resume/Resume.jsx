@@ -2,6 +2,11 @@ import './ResumeStyle.css'
 import React from 'react'
 
 const Resume = () => {
+    const handlePrint = () => {
+        window.print();
+    };
+
+
     return (
 
         <div className='ResumeMainDev'>
@@ -10,7 +15,7 @@ const Resume = () => {
                     <a href="/assets/img/Resume.pdf" target="_blank" rel="noopener noreferrer">Download Pdf</a>
                 </div>
                 <div class="right_btn">
-                    <button onclick="window.print()">Print</button>
+                    <button onClick={handlePrint}>Print</button>
                 </div>
             </div>
 
