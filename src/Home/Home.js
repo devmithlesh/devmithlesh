@@ -11,7 +11,6 @@ import Navbar from '../Menu/Navbar'
 import Colorsidebar from "../Components/Colorsidebar/Colorsidebar";
 import '../index.css';
 import PreeLoading from './PreeLoading';
-import { useNavigate } from 'react-router-dom';
 
 const colorMappings = {
   white: {
@@ -76,8 +75,6 @@ function Home() {
       document.documentElement.style.setProperty(key, colorStyles[key]);
     }
   };
-
-  const navigate = useNavigate()
 
   // --end
 
