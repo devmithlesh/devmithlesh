@@ -53,11 +53,11 @@ function Pdetail({ isActive, setActive }) {
         <div className="landmark">
           <div className="age">
             <p className="btnsame">Age</p>
-            <p>21</p>
+            <p>22</p>
           </div>
           <div className="residence">
             <p className="btnsame">Residence</p>
-            <p>PB08</p>
+            <p>Jalandhar</p>
           </div>
           <div className="address">
             <p className="btnsame">Address</p>
@@ -126,27 +126,31 @@ function Pdetail({ isActive, setActive }) {
           <h3>Languages</h3>
           <div className="lg_inside">
             <p>
-              <span>Hindi</span> <span>100%</span>
+              <span>Hindi</span> 
+              {/* <span>100%</span> */}
             </p>
-            <div className="progress">
+            {/* <div className="progress">
               <div className="pro100"></div>
-            </div>
+            </div> */}
           </div>
           <div className="lg_inside">
             <p>
-              <span>Punjabi</span> <span>80%</span>
+              <span>Punjabi</span> 
+              
+              {/* <span>80%</span> */}
             </p>
-            <div className="progress">
+            {/* <div className="progress">
               <div className="pro80"></div>
-            </div>
+            </div> */}
           </div>
           <div className="lg_inside">
             <p>
-              <span>English</span> <span>40%</span>
+              <span>English</span>
+               {/* <span>40%</span> */}
             </p>
-            <div className="progress">
+            {/* <div className="progress">
               <div className="pro40"></div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* border skill */}

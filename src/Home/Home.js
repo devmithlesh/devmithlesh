@@ -185,9 +185,10 @@ function Home() {
                 <br class="looking_br" /> */}
                 </p>
                 <div className="btn_hireme">
-                  <button className="btn_hire btnsame" onClick={() => navigate('/resume')}>
-                    Hire Me <i className="fa-solid fa-user-tie"></i>
-                  </button>
+                  <a href="/assets/img/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <button className="btn_hire btnsame">
+                      Hire Me <i className="fa-solid fa-user-tie"></i>
+                    </button></a>
                 </div>
               </div>
             </div>

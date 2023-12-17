@@ -29,7 +29,7 @@ function About() {
                   <p>Year Of Experience</p>
                 </div>
                 <div className="box_about">
-                  <span>2+</span>
+                  <span>4+</span>
                   <p>Live Project</p>
                 </div>
                 <div className="box_about">
