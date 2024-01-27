@@ -17,7 +17,7 @@ function Project() {
             </h2>
 
             <div className="titleheading">
-              <p className="textsub">my static landing page showcases my journey, skills, and accomplishments through elegant HTML , CSS and Js design.</p>
+              <p className="textsub">my static landing page showcases my journey, skills, and accomplishments through elegant HTML , CSS and React js design.</p>
             </div>
 
             <div className="project_card_main_flex">

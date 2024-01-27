@@ -16,7 +16,7 @@ function About() {
             <div className="about_main_div">
               <div className="left_about">
                 <div className="img_left_div">
-                  <img src="/assets/img/about.webp" alt="" />
+                  <img src="/assets/demithlesh.jpg" alt="" />
                   <span className="b_img_lefta1"></span>
                   <span className="b_img_lefta2"></span>
                   <span className="b_img_lefta3"></span>
