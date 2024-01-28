@@ -100,8 +100,8 @@
   margin-left: 3px;
   color: var(--black);
   white-space: nowrap;
-  animation: text 4.5s steps(9) infinite;
-  border-right: 2px solid #fff;
+  animation: text 4.5s steps(8) infinite;
+  /* border-right: 2px solid var(--white); */
 }
 
 @keyframes text {
@@ -110,7 +110,7 @@
   }
 
   50% {
-    width: 9ch;
+    width: 8ch;
   }
 }
 
@@ -357,7 +357,7 @@
   }
 
   /* Projects */
-  .project_card_main_flex {
+  .project_main_div .project_card_main_flex {
     grid-template-columns: repeat(1, 1fr);
   }
 

@@ -9,7 +9,7 @@ const Colorsidebar = ({ currentColor, handleColorChange, setisActive, isActive }
             </div>
             <p>Dark Theme</p>
             <div>
-                <div className="darkbtn themebtn" onClick={() => handleColorChange('dark')}></div>
+                <button className="darkbtn themebtn" onClick={() => handleColorChange('dark')}></button>
                 <p>Dark Mode</p>
             </div>
 
@@ -19,15 +19,15 @@ const Colorsidebar = ({ currentColor, handleColorChange, setisActive, isActive }
 
             <div className="lightthemediv">
                 <div className=''>
-                    <div className="greenbtn themebtn" onClick={() => handleColorChange('green')}></div>
+                    <button className="greenbtn themebtn" onClick={() => handleColorChange('green')}></button>
                     <p>Green</p>
                 </div>
                 <div>
-                    <div className="purplebtn themebtn" onClick={() => handleColorChange('purple')}></div>
+                    <button className="purplebtn themebtn" onClick={() => handleColorChange('purple')}></button>
                     <p>Purple</p>
                 </div>
                 <div>
-                    <div className="bluebtn themebtn" onClick={() => handleColorChange('blue')}></div>
+                    <button className="bluebtn themebtn" onClick={() => handleColorChange('blue')}></button>
                     <p>Blue</p>
                 </div>
 

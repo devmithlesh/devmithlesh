@@ -71,7 +71,7 @@ function Pdetail({ isActive, setActive }) {
           <h3>Skill</h3>
           <div className="skills">
             <p>
-              <span>Html</span> <span>80%</span>
+              <span>Html</span>
             </p>
             <div className="progress">
               <div className="pro_div_in80"></div>
@@ -79,7 +79,7 @@ function Pdetail({ isActive, setActive }) {
           </div>
           <div className="skills">
             <p>
-              <span>Css</span> <span>80%</span>
+              <span>Css</span>
             </p>
             <div className="progress">
               <div className="pro_div_in80"></div>
@@ -87,7 +87,7 @@ function Pdetail({ isActive, setActive }) {
           </div>
           <div className="skills">
             <p>
-              <span>Javascript</span> <span>40%</span>
+              <span>Javascript</span>
             </p>
             <div className="progress">
               <div className="pro_div_in40"></div>
@@ -96,7 +96,6 @@ function Pdetail({ isActive, setActive }) {
           <div className="skills">
             <p>
               <span>React js & Next js</span>
-              <span>40%</span>
             </p>
             <div className="progress">
               <div className="pro_div_in40"></div>
@@ -104,7 +103,7 @@ function Pdetail({ isActive, setActive }) {
           </div>
           <div className="skills">
             <p>
-              <span>Tailwind css</span> <span>80%</span>
+              <span>Tailwind css</span>
             </p>
             <div className="progress">
               <div className="pro_div_in80"></div>
@@ -112,12 +111,29 @@ function Pdetail({ isActive, setActive }) {
           </div>
           <div className="skills">
             <p>
-              <span>Bootstrap</span> <span>60%</span>
+              <span>Bootstrap</span>
             </p>
             <div className="progress">
               <div className="pro_div_in60"></div>
             </div>
           </div>
+        </div>
+
+        {/* border skill */}
+        <div className="border_line"></div>
+        {/* Extra skills */}
+        <div className="extra_know">
+          <h3>Current Learning </h3>
+          <p>
+            <i className="fa-solid fa-chevron-right"></i> Framer Motion
+          </p>
+          <p>
+            <i className="fa-solid fa-chevron-right"></i> React Native
+          </p>
+          <p>
+            <i className="fa-solid fa-chevron-right"></i> Figma
+          </p>
+
         </div>
         {/* border line */}
         <div className="border_line"></div>
@@ -126,7 +142,7 @@ function Pdetail({ isActive, setActive }) {
           <h3>Languages</h3>
           <div className="lg_inside">
             <p>
-              <span>Hindi</span> 
+              <span>Hindi</span>
               {/* <span>100%</span> */}
             </p>
             {/* <div className="progress">
@@ -135,8 +151,8 @@ function Pdetail({ isActive, setActive }) {
           </div>
           <div className="lg_inside">
             <p>
-              <span>Punjabi</span> 
-              
+              <span>Punjabi</span>
+
               {/* <span>80%</span> */}
             </p>
             {/* <div className="progress">
@@ -146,27 +162,12 @@ function Pdetail({ isActive, setActive }) {
           <div className="lg_inside">
             <p>
               <span>English</span>
-               {/* <span>40%</span> */}
+              {/* <span>40%</span> */}
             </p>
             {/* <div className="progress">
               <div className="pro40"></div>
             </div> */}
           </div>
-        </div>
-        {/* border skill */}
-        <div className="border_line"></div>
-        {/* Extra skills */}
-        <div className="extra_know">
-          <h3>Extra Skills</h3>
-          <p>
-            <i className="fa-solid fa-chevron-right"></i> Github
-          </p>
-          <p>
-            <i className="fa-solid fa-chevron-right"></i> Vs Code
-          </p>
-          <p>
-            <i className="fa-solid fa-chevron-right"></i> MS office
-          </p>
         </div>
         <div className="button_resume">
           <a className="btnsame"

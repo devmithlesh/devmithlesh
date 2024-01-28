@@ -148,8 +148,16 @@ a {
   color: var(--black-6);
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
 }
 
 .mt20 {
@@ -218,4 +226,95 @@ a {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 30px;
+}
+
+
+/* End Smooth Scroll tab  */
+
+.AdscrolltabWrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px;
+  background: #F5F5F5;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 350px;
+  height: 40px;
+}
+
+.AdscrolltabWrap .AdIndicator {
+  content: "";
+  width: 100%;
+  max-width: 170px;
+  height: 32px;
+  background: var(--white);
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  z-index: 5;
+  border-radius: 26px;
+  transition: all 0.3s ease-out;
+}
+
+.AdscrolltabWrap .AdtabDrop {
+  outline: none;
+  opacity: 0;
+  display: none;
+}
+
+.AdtablabelDrop {
+  width: 100%;
+  height: 32px;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  font-family: var(--atterta);
+}
+
+.AdtablabelDrop.active {
+  color: var(--black-2);
+}
+
+/* End Smooth Scroll tab  */
+
+.TabVisibal {
+  display: none;
+}
+
+.TabVisibal.active {
+  display: block;
+}
+
+.TabdataAnimate {
+  animation: animateTab 0.8s ease-in-out;
+}
+
+@keyframes animateTab {
+  0% {
+
+      transform: translateY(-4px);
+      opacity: 0.7;
+
+  }
+
+  100% {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@media(max-width: 767px){
+  .AdscrolltabWrap .AdIndicator{
+    max-width: 150px;
+  }
 }

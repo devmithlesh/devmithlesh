@@ -1,5 +1,5 @@
 
-const Pdata = [
+const Pdata1 = [
   {
     image: "/assets/img/projects/shoes.webp",
     alts: "FootbyFoot",
@@ -48,4 +48,26 @@ const Pdata = [
   },
 ];
 
-export default Pdata;
+
+const newdata = [
+  {
+    image: "/assets/img/projects/getpreppedweb.webp",
+    alts: "getprepped",
+    weblink: "https://getprepped.in/",
+    title: "GetPrepped Website",
+  },
+  {
+    image: "/assets/img/projects/mentorloweb.webp",
+    alts: "mentorlo",
+    weblink: "https://mentorlo.com/",
+    title: "MentorLo Website",
+  },
+  {
+    image: "/assets/img/projects/product.webp",
+    alts: "product",
+    weblink: "https://mastersunion.getprepped.in/login",
+    title: "MentorLo Product",
+  },
+];
+
+export { Pdata1, newdata };
