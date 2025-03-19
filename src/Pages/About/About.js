@@ -25,7 +25,7 @@ function About() {
               </div>
               <div className="right_about">
                 <div className="box_about">
-                  <span>1+</span>
+                  <span>2+</span>
                   <p>Year Of Experience</p>
                 </div>
                 <div className="box_about">

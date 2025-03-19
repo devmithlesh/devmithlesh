@@ -161,6 +161,8 @@
   width: 100%;
   height: auto;
   background: #ccc;
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .language_detail .progress>.pro100 {

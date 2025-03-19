@@ -51,23 +51,48 @@ const Pdata1 = [
 
 const newdata = [
   {
+    image: "/assets/img/projects/orbit.png",
+    alts: "product-orbit",
+    weblink: "https://orbit.mastersunion.org/login",
+    title: "Orbit",
+    passage: "Orbit Product is a React.js-based project where Figma designs are converted into HTML and CSS, creating a structured dummy UI. This process ensures seamless collaboration with the development team for further integration."
+  },
+  {
+    image: "/assets/img/projects/tetr.png",
+    alts: "product-tetr",
+    weblink: "https://tetr.com/",
+    title: "tetr",
+    passage: "Tetr Website is a React.js-based project where Figma designs are converted into HTML and CSS, creating a structured dummy UI. This process ensures seamless collaboration with the development team for further integration."
+  },
+
+  {
     image: "/assets/img/projects/getpreppedweb.webp",
     alts: "getprepped",
     weblink: "https://getprepped.in/",
     title: "GetPrepped Website",
+    passage: "Getprepped Website is a React.js-based project where Figma designs are converted into HTML and CSS, creating a structured dummy UI. This process ensures seamless collaboration with the development team for further integration."
   },
-  {
-    image: "/assets/img/projects/mentorloweb.webp",
-    alts: "mentorlo",
-    weblink: "https://mentorlo.com/",
-    title: "MentorLo Website",
-  },
+  // {
+  //   image: "/assets/img/projects/mentorloweb.webp",
+  //   alts: "mentorlo",
+  //   weblink: "https://mentorlo.com/",
+  //   title: "MentorLo Website",
+  // },
   {
     image: "/assets/img/projects/product.webp",
     alts: "product",
     weblink: "https://mastersunion.getprepped.in/login",
-    title: "MentorLo Product",
+    title: "Getprepped Product",
+    passage: "Getprepped Product is a React.js-based project where Figma designs are converted into HTML and CSS, creating a structured dummy UI. This process ensures seamless collaboration with the development team for further integration."
   },
+  {
+    image: "/assets/img/projects/cowork.png",
+    alts: "product",
+    weblink: "https://www.cowork.mastersunion.org/login",
+    title: "Cowork Product",
+    passage: "Cowork Product is a React.js-based project where Figma designs are converted into HTML and CSS, creating a structured dummy UI. This process ensures seamless collaboration with the development team for further integration."
+  },
+
 ];
 
 export { Pdata1, newdata };

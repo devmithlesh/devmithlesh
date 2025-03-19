@@ -67,8 +67,8 @@ function Education() {
                   <span>HTML</span>
                   <span>CSS</span>
                   <span>Tailwind</span>
-                  <span>Bootstrap</span>
-                  <span>React </span>
+                  <span>StyledCompt</span>
+                  <span>React/Next </span>
                   <span>Javascript</span>
                 </div>
               </div>

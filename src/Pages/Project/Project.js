@@ -61,6 +61,7 @@ function Project() {
                       title={val.title}
                       weblink={val.weblink}
                       button={val.button}
+                      passage={val.passage}
                     />
                   );
                 })}

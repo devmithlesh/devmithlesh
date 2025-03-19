@@ -7,7 +7,7 @@ function Pcard(props) {
           <img src={props.image} alt={props.alts} />
           <div className="content_div_project">
             <h4>{props.title}</h4>
-            <p>{props.subtext}</p>
+            <p title={props.passage}>{props.passage}</p>
             <div className="code_view_div">
               {
                 props.button && <a className="btnsame" href={props.button} target="_blank" rel="noopener noreferrer">

@@ -53,7 +53,7 @@ function Pdetail({ isActive, setActive }) {
         <div className="landmark">
           <div className="age">
             <p className="btnsame">Age</p>
-            <p>22</p>
+            <p>23</p>
           </div>
           <div className="residence">
             <p className="btnsame">Residence</p>
@@ -74,7 +74,7 @@ function Pdetail({ isActive, setActive }) {
               <span>Html</span>
             </p>
             <div className="progress">
-              <div className="pro_div_in80"></div>
+              <div className="pro_div_in80" style={{width:"95%"}}></div>
             </div>
           </div>
           <div className="skills">
@@ -82,7 +82,7 @@ function Pdetail({ isActive, setActive }) {
               <span>Css</span>
             </p>
             <div className="progress">
-              <div className="pro_div_in80"></div>
+              <div className="pro_div_in80" style={{width:"95%"}}></div>
             </div>
           </div>
           <div className="skills">
