@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from "react";
 import './ColorsidebarStyle.css'
 const Colorsidebar = ({ currentColor, handleColorChange, setisActive, isActive }) => {
+
+    //onclick close outside
+    const ref = useRef(null);
+
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+            setisActive(false);
+        }
+      }
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+
     return (
 
-        <div className={`colorwrapper ${isActive === true && 'active'}`}>
+        <div className={`colorwrapper ${isActive === true && 'active'}`} ref={ref}>
             <div className="crossbar mb-20" >
                 <i class="fa-solid fa-xmark" onClick={() => setisActive(false)}></i>
             </div>

@@ -33,7 +33,7 @@ function Project() {
             </h2>
 
             <div className="titleheading">
-              <p className="textsub">my static landing page showcases my journey, skills, and accomplishments through elegant HTML , CSS and React js design.</p>
+              <p className="textsub">A collection of projects crafted with HTML, CSS, and React.js, reflecting my growth, expertise, and passion for front-end development.</p>
             </div>
 
             <div className="SliderMenuProject mb-20">

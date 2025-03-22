@@ -174,10 +174,12 @@ function Home() {
                 </h4>
 
                 <p className="looking">
-                  Seeking a challenging frontend developer position to demonstrate my proficiency in
-                  programming languages including HTML, CSS, JavaScript & ReactJS.
-                  I possess a strong ability to create responsive and visually appealing
-                  frontend solutions that prioritize user experience and engagement.
+                  I'm a passionate front-end developer with two years of experience, 
+                  specializing in HTML, CSS, JavaScript, and ReactJS. I thrive on building responsive,
+                   visually appealing, and user-friendly web applications. Seeking a challenging role 
+                   where I can apply my skills to craft engaging digital experiences and enhance user
+                    interactions.
+
                   {/* <br class="looking_br" /> 
                 <br class="looking_br" /> */}
                 </p>
