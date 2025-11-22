@@ -8,7 +8,7 @@
 - 👨‍💻 All of my projects are available at https://devmithlesh.netlify.app/
 
 - 📫 How to reach me **mithleshnirmal786123@gmail.com**
-- 
+  
 - ⚡ Fun fact **I'm Funny😜**
 
 <h3 align="left">Connect with me:</h3>
