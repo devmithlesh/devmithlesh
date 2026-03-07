@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./Home/Home";
-import Nomatch from "./Pages/Nomatch";
+import NoMatch from "./Pages/NoMatch";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Resume from "./Pages/Resume/Resume";
 
@@ -13,7 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="*" element={<Nomatch />} />
+            <Route path="*" element={<NoMatch />} />
           </Routes>
         </BrowserRouter>
       </div>

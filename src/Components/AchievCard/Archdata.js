@@ -1,40 +1,40 @@
 const adata = [
   {
-    image: "/assets/img/archivements/html2.webp",
+    image: "/assets/img/achievements/html2.webp",
     alts: "HTML",
-    title: "HTML Workshop for 8 Weeks Cert.",
-    pass: "Html course",
+    title: "HTML Workshop Certificate",
+    pass: "HTML course",
   },
   {
-    image: "/assets/img/archivements/css.webp",
+    image: "/assets/img/achievements/css.webp",
     alts: "CSS",
-    title: "Completed the CSS for 1 Week.",
-    pass: "Html course",
+    title: "Completed CSS in 1 Week",
+    pass: "CSS course",
   },
   {
-    image: "/assets/img/archivements/js.webp",
-    alts: "Javascript",
+    image: "/assets/img/achievements/js.webp",
+    alts: "JavaScript",
     title: "Introduction to JavaScript.",
-    pass: "Html course",
+    pass: "JavaScript course",
   },
   {
-    image: "/assets/img/archivements/fullweb.webp",
+    image: "/assets/img/achievements/fullweb.webp",
     alts: "Responsive",
-    title: "Built Responsive Website.",
-    pass: "Html course",
+    title: "Built a Responsive Website",
+    pass: "Responsive web course",
   },
   {
-    image: "/assets/img/archivements/react.webp",
-    alts: "React js",
-    title: "React JS Beginner Level",
-    pass: "Html course",
+    image: "/assets/img/achievements/react.webp",
+    alts: "React.js",
+    title: "React.js Beginner Level",
+    pass: "React.js course",
   },
 
   {
-    image: "/assets/img/archivements/tailwind2.webp",
+    image: "/assets/img/achievements/tailwind2.webp",
     alts: "Tailwind",
     title: "Tailwind CSS",
-    pass: "Html course",
+    pass: "Tailwind CSS course",
   },
 ];
 export default adata;

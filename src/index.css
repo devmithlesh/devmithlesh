@@ -208,8 +208,8 @@ a {
   }
 }
 
-/* nomatch */
-.NoMatchWrap {
+/* no match */
+.noMatchWrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +218,7 @@ a {
   padding: 40px;
 }
 
-.btnNomatch button {
+.btnNoMatch button {
   padding: 12px 40px;
   background: var(--black);
   color: var(--white);

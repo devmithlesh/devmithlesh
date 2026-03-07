@@ -46,7 +46,7 @@ function Navbar({ setisActive, isHidden }) {
         <div className="nav_bar_main">
           {!isHidden && (
             <div className="dark-mode" onClick={() => setisActive(true)}>
-              <i class="fa-solid fa-gear"></i>
+              <i className="fa-solid fa-gear"></i>
             </div>)
           }
           <div className="menu_options">
@@ -59,7 +59,7 @@ function Navbar({ setisActive, isHidden }) {
             <a href="#project" className={`${listActive === 3 && 'active_home'}`} onClick={handleTabClick} id={3}>
               <i className="fa-solid fa-file"></i>
             </a>
-            <a href="#archivement" className={`${listActive === 4 && 'active_home'}`} onClick={handleTabClick} id={4}>
+            <a href="#achievement" className={`${listActive === 4 && 'active_home'}`} onClick={handleTabClick} id={4}>
               <i className="fa-solid fa-trophy"></i>
             </a>
             <a href="#education" className={`${listActive === 5 && 'active_home'}`} onClick={handleTabClick} id={5}>

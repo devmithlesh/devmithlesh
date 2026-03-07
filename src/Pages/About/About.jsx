@@ -26,19 +26,19 @@ function About() {
               <div className="right_about">
                 <div className="box_about">
                   <span>2+</span>
-                  <p>Year Of Experience</p>
+                  <p>Years of Experience</p>
                 </div>
                 <div className="box_about">
                   <span>4+</span>
-                  <p>Live Project</p>
+                  <p>Live Projects</p>
                 </div>
                 <div className="box_about">
                   <span>6+</span>
-                  <p>Practice Project</p>
+                  <p>Practice Projects</p>
                 </div>
                 <div className="box_about">
                   <span>10+</span>
-                  <p>Certification</p>
+                  <p>Certifications</p>
                 </div>
               </div>
             </div>

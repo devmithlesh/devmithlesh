@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 
-
 function Footer() {
   return (
     <>
@@ -14,7 +13,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa-brands fa-linkedin footer_icon_link"></i>
+                <i className="fa-brands fa-linkedin footer_icon_link"></i>
               </a>
 
               <a
@@ -22,7 +21,7 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa-brands fa-github footer_icon_git"></i>
+                <i className="fa-brands fa-github footer_icon_git"></i>
               </a>
 
               <a
@@ -30,10 +29,10 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fa-brands fa-instagram footer_icon_insta"></i>
+                <i className="fa-brands fa-instagram footer_icon_insta"></i>
               </a>
             </div>
-            <p>Copyright © By devmithlesh</p>
+            <p>Copyright © devmithlesh</p>
           </div>
         </div>
       </footer>

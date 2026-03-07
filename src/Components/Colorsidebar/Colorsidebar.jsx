@@ -21,7 +21,7 @@ const Colorsidebar = ({ currentColor, handleColorChange, setisActive, isActive }
 
         <div className={`colorwrapper ${isActive === true && 'active'}`} ref={ref}>
             <div className="crossbar mb-20" >
-                <i class="fa-solid fa-xmark" onClick={() => setisActive(false)}></i>
+                <i className="fa-solid fa-xmark" onClick={() => setisActive(false)}></i>
             </div>
             <p>Dark Theme</p>
             <div>

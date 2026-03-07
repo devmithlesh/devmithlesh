@@ -298,21 +298,21 @@
     margin-top: 5px;
 }
 
-.ResumeMainDev .graducation {
+.ResumeMainDev .graduation {
     margin-top: 15px;
 }
 
-.ResumeMainDev .graducation h4 {
+.ResumeMainDev .graduation h4 {
     margin-bottom: 10px;
 }
 
-.ResumeMainDev .graducation span {
+.ResumeMainDev .graduation span {
     font-size: 13px;
     font-family: var(--atterta);
     color: var(--black);
 }
 
-.ResumeMainDev .graducation p {
+.ResumeMainDev .graduation p {
     margin-top: 10px;
 }
 
