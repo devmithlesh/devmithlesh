@@ -1,7 +1,9 @@
 .about_bg_top {
-  background: var(--white);
+  background: linear-gradient(180deg, var(--white), var(--app-bg-soft));
   margin-top: 50px;
   padding: 0 40px;
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 18px 40px var(--panel-shadow);
 }
 
 .about_div_in {
@@ -39,6 +41,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  background: var(--surface-soft);
 }
 
 .img_left_div .b_img_lefta1 {

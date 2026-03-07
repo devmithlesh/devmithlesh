@@ -5,5 +5,9 @@ img {
 .appmainwrapper {
     display: flex;
     justify-content: center;
-    background: #eeecec;
+    background:
+      radial-gradient(circle at top left, var(--theme-glow-1), transparent 28%),
+      radial-gradient(circle at bottom right, var(--theme-glow-2), transparent 32%),
+      var(--app-bg, #eeecec);
+    transition: background 0.35s ease;
 }

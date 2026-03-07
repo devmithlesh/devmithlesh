@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Pdetail from '../Menu/Pdetail'
 import About from '../Pages/About/About'
 import Achievement from '../Pages/Achievement/Achievement'
@@ -9,117 +9,31 @@ import './Home.css'
 import Footer from '../Pages/Footer/Footer'
 import Navbar from '../Menu/Navbar'
 import Colorsidebar from "../Components/Colorsidebar/Colorsidebar";
-import '../index.css';
 import Preloading from './Preloading';
 
-const colorMappings = {
-  white: {
-    '--white': '#ffffff',
-    '--white-1': '#fff',
-    '--black': '#171717',
-    '--black-3': '#111827',
-    '--black-4': '#171717',
-    '--black-5': ' rgba(0, 0, 0, 0.5)',
-    '--grey-1': 'gray',
-    '--black-6': '#171717',
-    '--yellow': '#ffbf00',
-    '--scroll': '#ffbf00',
-    '--blue': 'rgb(47, 84, 150)',
-    '--yellow-1': '#ffbf00',
-    '--black-7': '#121212',
-  },
-  dark: {
-    '--white': '#171717',
-    '--white-1': '#262626',
-    '--black': '#fff',
-    '--black-3': '#404040',
-    '--black-4': '#fff',
-    '--black-5': '#404040',
-    '--grey-1': '#404040',
-    '--scroll': '#171717',
-    '--blue': 'rgb(47, 84, 150)',
-  },
-  green: {
-    '--yellow': 'green',
-    '--black-6': '#fff',
-    '--yellow-1': 'green',
-    '--scroll': 'green',
-    '--blue': 'green',
-    '--black-7': '#fff',
-  },
-  purple: {
-    '--yellow': 'purple',
-    '--black-6': '#fff',
-    '--yellow-1': 'purple',
-    '--scroll': 'purple',
-    '--blue': 'purple',
-    '--black-7': '#fff',
-  },
-  blue: {
-    '--yellow': 'blue',
-    '--black-6': '#fff',
-    '--yellow-1': 'blue',
-    '--scroll': 'blue',
-    '--blue': 'blue',
-    '--black-7': '#fff',
-  },
-};
-
 function Home() {
-  const [currentColor, setCurrentColor] = useState('white');
-
-  const handleColorChange = (color) => {
-    setCurrentColor(color);
-    const colorStyles = colorMappings[color];
-    for (const key in colorStyles) {
-      document.documentElement.style.setProperty(key, colorStyles[key]);
-    }
-  };
-
-  // --end
-
   const [toggle, setToggle] = useState(false)
-  const [toggleColor, settoggleColor] = useState()
-
-  useEffect(() => {
-    if (toggle) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-
-    return () => {
-      document.body.style.overflow = 'unset'; // Reset overflow when component unmounts
-    };
-  }, [toggle]);
-
-
-
-  useEffect(() => {
-    if (toggleColor) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-
-    return () => {
-      document.body.style.overflow = 'unset'; // Reset overflow when component unmounts
-    };
-  }, [toggleColor]);
-
-  // Preloading
-
+  const [toggleColor, settoggleColor] = useState(false)
   const [loading, setLoading] = useState(true);
+  const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    document.body.style.overflow = toggle || toggleColor ? 'hidden' : 'unset';
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [toggle, toggleColor]);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
       setLoading(false);
-    }, 1600);
+    }, 1200);
+
+    return () => {
+      window.clearTimeout(timer);
+    };
   }, []);
-
-
-  // onscroll div setting button
-  const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -137,9 +51,6 @@ function Home() {
     };
   }, []);
 
-
-
-
   return (
     <>
       {loading ? <Preloading /> :
@@ -150,12 +61,12 @@ function Home() {
           </div>
 
           <div className="home_div_main_feed">
-            <div className={`sidebarcolodiv ${toggleColor === true && 'active'}`}>
-              <Colorsidebar isActive={toggleColor} setisActive={settoggleColor} handleColorChange={handleColorChange} currentColor={currentColor} />
-            </div>
+            <Colorsidebar
+              isActive={toggleColor}
+              setisActive={settoggleColor}
+            />
             <div className="wrapper">
               <div className="leftside_home_div">
-
                 <div className="menudots" onClick={() => setToggle(true)}>
                   <i className="fa-solid fa-bars"></i>
                 </div>
@@ -174,20 +85,18 @@ function Home() {
                 </h4>
 
                 <p className="looking">
-                  I'm a passionate front-end developer with two years of experience, 
+                  I'm a passionate front-end developer with two years of experience,
                   specializing in HTML, CSS, JavaScript, and React.js. I thrive on building responsive,
-                   visually appealing, and user-friendly web applications. Seeking a challenging role 
-                   where I can apply my skills to craft engaging digital experiences and enhance user
-                    interactions.
-
-                  {/* <br className="looking_br" /> 
-                <br className="looking_br" /> */}
+                  visually appealing, and user-friendly web applications. Seeking a challenging role
+                  where I can apply my skills to craft engaging digital experiences and enhance user
+                  interactions.
                 </p>
                 <div className="btn_hireme">
                   <a href="/assets/img/Resume.pdf" target="_blank" rel="noopener noreferrer">
                     <button className="btn_hire btnsame">
                       Hire Me <i className="fa-solid fa-user-tie"></i>
-                    </button></a>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

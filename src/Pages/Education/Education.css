@@ -1,7 +1,9 @@
 .education_main_div {
-  background: var(--white);
+  background: linear-gradient(180deg, var(--white), var(--app-bg-soft));
   margin-top: 50px;
   padding: 40px 40px 50px 40px;
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 18px 40px var(--panel-shadow);
 }
 
 .education_main_div h2 {

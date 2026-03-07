@@ -1,73 +1,71 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "./Nav.css";
+
+const navItems = [
+  { id: "home", icon: "fa-house-user", label: "Home" },
+  { id: "about_us", icon: "fa-address-card", label: "About" },
+  { id: "project", icon: "fa-file", label: "Projects" },
+  { id: "achievement", icon: "fa-trophy", label: "Achievements" },
+  { id: "education", icon: "fa-user-graduate", label: "Education" },
+  { id: "contact", icon: "fa-message", label: "Contact" },
+];
+
 function Navbar({ setisActive, isHidden }) {
-
-  const [listActive, setListActive] = useState(1)
-  const handleTabClick = (id) => {
-    setListActive(id);
-  };
-
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    const tab2Offset = 400;
-    const tab3Offset = 1200;
-    const tab4Offset = 2000;
-    const tab5Offset = 2600;
-    const tab6Offset = 3300;
-
-    if (scrollY < tab2Offset) {
-      setListActive(1);
-    } else if (scrollY < tab3Offset) {
-      setListActive(2);
-    } else if (scrollY < tab4Offset) {
-      setListActive(3);
-    }
-    else if (scrollY < tab5Offset) {
-      setListActive(4);
-    }
-    else if (scrollY < tab6Offset) {
-      setListActive(5);
-    }
-    else {
-      setListActive(6);
-    }
-  };
+  const [activeSection, setActiveSection] = useState("home");
+  const sections = useMemo(() => navItems.map((item) => item.id), []);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntry = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visibleEntry?.target?.id) {
+          setActiveSection(visibleEntry.target.id);
+        }
+      },
+      {
+        threshold: [0.2, 0.45, 0.7],
+        rootMargin: "-15% 0px -35% 0px",
+      }
+    );
+
+    sections.forEach((sectionId) => {
+      const element = document.getElementById(sectionId);
+
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      observer.disconnect();
     };
-  }, []);
+  }, [sections]);
 
   return (
     <>
       <div className="navbar_main_div">
         <div className="nav_bar_main">
           {!isHidden && (
-            <div className="dark-mode" onClick={() => setisActive(true)}>
+            <button type="button" className="dark-mode" onClick={() => setisActive(true)} aria-label="Open theme settings">
               <i className="fa-solid fa-gear"></i>
-            </div>)
+            </button>
+          )
           }
           <div className="menu_options">
-            <a href="#home" className={`${listActive === 1 && 'active_home'}`} onClick={handleTabClick} id={1}>
-              <i className="fa-solid fa-house-user"></i>
-            </a>
-            <a href="#about_us" className={`${listActive === 2 && 'active_home'}`} onClick={handleTabClick} id={2}>
-              <i className="fa-solid fa-address-card"></i>
-            </a>
-            <a href="#project" className={`${listActive === 3 && 'active_home'}`} onClick={handleTabClick} id={3}>
-              <i className="fa-solid fa-file"></i>
-            </a>
-            <a href="#achievement" className={`${listActive === 4 && 'active_home'}`} onClick={handleTabClick} id={4}>
-              <i className="fa-solid fa-trophy"></i>
-            </a>
-            <a href="#education" className={`${listActive === 5 && 'active_home'}`} onClick={handleTabClick} id={5}>
-              <i className="fa-solid fa-user-graduate"></i>
-            </a>
-            <a href="#contact" className={`${listActive === 6 && 'active_home'}`} onClick={handleTabClick} id={6}>
-              <i className="fa-solid fa-message"></i>
-            </a>
+            {navItems.map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className={activeSection === item.id ? "active_home" : ""}
+                aria-label={item.label}
+                title={item.label}
+              >
+                <i className={`fa-solid ${item.icon}`}></i>
+              </a>
+            ))}
           </div>
         </div>
       </div>

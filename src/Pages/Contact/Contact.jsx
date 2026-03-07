@@ -24,16 +24,16 @@ const Contact = () => {
 
   return (
     <>
-      <section>
+      <section id="contact" data-section="contact">
         <div className="wrapper">
-          <div className="contact_main_div" id="contact">
-            <h2>
+          <div className="contact_main_div" data-reveal="section">
+            <h2 data-reveal="heading">
               Contact <span className="text_h2_yellow"> Me</span>
               <div className="animated_div_heading">
                 <span></span>
               </div>
             </h2>
-            <div className="main_grid_div_contact">
+            <div className="main_grid_div_contact" data-reveal="content">
               <div className="contact_details">
                 <h4>
                   Contact Info
