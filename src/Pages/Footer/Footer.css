@@ -7,7 +7,9 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 40px;
-  background: var(--white);
+  background: linear-gradient(180deg, var(--white), var(--app-bg-soft));
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 18px 40px var(--panel-shadow);
 }
 
 .footer_icons {

@@ -22,21 +22,21 @@ function Project() {
 
   return (
     <>
-      <section>
+      <section id="project" data-section="project">
         <div className="wrapper">
-          <div className="project_main_div" id="project">
-            <h2>
+          <div className="project_main_div" data-reveal="section">
+            <h2 data-reveal="heading">
               My <span> Projects</span>
               <div className="animated_div_heading">
                 <span></span>
               </div>
             </h2>
 
-            <div className="titleheading">
+            <div className="titleheading" data-reveal="content">
               <p className="textsub">A collection of projects crafted with HTML, CSS, and React.js, reflecting my growth, expertise, and passion for front-end development.</p>
             </div>
 
-            <div className="SliderMenuProject mb-20">
+            <div className="SliderMenuProject mb-20" data-reveal="content">
               <div className="AdscrolltabWrap">
                 <div className={`AdtablabelDrop AdDroptab_1 ${tabActive === 1 && 'active'}`} onClick={() => setIstabActive(1)}>Live Projects</div>
 
@@ -50,7 +50,7 @@ function Project() {
             </div>
 
 
-            <div className={`TabVisibal ${tabActive === 1 && 'active'}`}>
+            <div className={`TabVisibal ${tabActive === 1 && 'active'}`} data-reveal="content">
               <div className={`project_card_main_flex TabdataAnimate`}>
                 {newdata.map((val, ind) => {
                   return (
@@ -68,7 +68,7 @@ function Project() {
               </div>
             </div>
 
-            <div className={`TabVisibal ${tabActive === 2 && 'active'}`}>
+            <div className={`TabVisibal ${tabActive === 2 && 'active'}`} data-reveal="content">
               <div className={`project_card_main_flex TabdataAnimate`}>
                 {Pdata1.map((val, ind) => {
                   return (
